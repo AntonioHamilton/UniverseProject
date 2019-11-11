@@ -1,0 +1,43 @@
+div#menu{
+    position: sticky;
+    top: 0;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    font-family: cursive;
+    font-size: x-large;
+    color: white;
+    background-color:#000002;
+    border-bottom-style: double;
+    border-bottom-color: coral;
+    border-bottom-width: thin;
+}
+
+
+a#logo{
+    margin-left: 50px;
+}
+
+ul#nav{
+
+    display: flex;
+    padding: 10px; 
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+    cursor: Pointer;
+}
+
+a#joke{
+    color: white;
+    text-decoration: none;
+    margin-right: 50px;
+}

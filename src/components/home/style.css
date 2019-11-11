@@ -1,0 +1,11 @@
+section#home{
+    margin: 0px;
+    top: 0;
+    left: 0;
+    height: 900px;
+}
+
+img#image{
+    height:100%; 
+    width: 100%
+}

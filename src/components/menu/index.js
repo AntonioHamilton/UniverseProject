@@ -1,18 +1,40 @@
 import React from 'react';
 import { Menu, Nav, Link, Logo, Joke } from './style';
+import Lottie from 'react-lottie'
+import animationData from '../../assets/3169-world.json'
 
-const MenuComp = () => {
-    return (
-        <Menu>
-            <Link href="#image"><Logo src="https://png.pngtree.com/element_pic/16/11/02/bd886d7ccc6f8dd8db17e841233c9656.jpg" alt="logo"/></Link>
-            <Nav id="nav">
-                <Nav><Link href="#App">O Aplicativo</Link></Nav>
-                <Nav><Link href="#About">Sobre nós</Link></Nav>
-                <Nav><Link href="#Contact">Contato</Link></Nav>
-            </Nav>
-            <Joke className="joke" href="Joke">Teste</Joke>
-        </Menu>
-    )
+class MenuComp extends React.Component {
+    render () {
+
+        const defaultOptions = {
+            loop: true,
+            autoplay: true, 
+            animationData: animationData,
+            rendererSettings: {
+              preserveAspectRatio: 'xMidYMid slice'
+            }
+        };
+    
+        return (
+            <Menu>
+                <Link href="#image">
+                    <Lottie 
+                        options={defaultOptions}
+                        height={50}
+                        width={50}
+                        isStopped={false}
+                        isPaused={false}
+                    />
+                </Link>
+                <Nav id="nav">
+                    <Nav><Link href="#App">O Aplicativo</Link></Nav>
+                    <Nav><Link href="#About">Sobre nós</Link></Nav>
+                    <Nav><Link href="#Contact">Contato</Link></Nav>
+                </Nav>
+                <Joke className="joke" href="Joke">Teste</Joke>
+            </Menu>
+        )
+    }
 }
 
 export default MenuComp;

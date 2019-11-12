@@ -5,8 +5,8 @@ export const GlobalStyle = createGlobalStyle `
         margin: 0px;
         padding: 0px;
     }
-
     body {
         height: 100%;
     }
+
 `

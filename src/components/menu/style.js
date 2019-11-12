@@ -4,7 +4,7 @@ export const Menu = styled.menu `
     position: sticky;
     top: 0;
     display: flex;
-    height: 50px;
+    height: 4.94vh;
     justify-content: space-between;
     align-items: center;
     font-family: cursive;

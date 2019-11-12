@@ -4,7 +4,7 @@ export const Container = styled.section `
     margin: 0px;
     top: 0;
     left: 0;
-    height: 900px;
+    height: 95vh;
 `
 
 export const Img = styled.img `

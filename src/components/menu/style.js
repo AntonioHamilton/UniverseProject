@@ -42,7 +42,3 @@ export const Nav = styled.ul `
     padding: 10px; 
 `
 
-export const Logo = styled.img `
-    height:50px
-`
-

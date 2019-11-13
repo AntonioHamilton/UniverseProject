@@ -9,6 +9,8 @@
     "react-dom": "^16.11.0",
     "react-loading-screen": "^0.0.17",
     "react-lottie": "^1.2.3",
+    "react-router-dom": "^5.1.2",
+    "react-router-hash-link": "^1.2.2",
     "react-scripts": "3.2.0",
     "styled-components": "^4.4.1"
   },

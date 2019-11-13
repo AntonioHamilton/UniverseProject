@@ -23,8 +23,8 @@ const animStar = keyframes `
   }
 `;
 
-
 export const Container = styled.section `
+    align-items: center;
     height:100vh;
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     overflow: hidden;

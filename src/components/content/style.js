@@ -23,7 +23,7 @@ const animStar = keyframes `
   }
 `;
 
-export const Container = styled.section `
+export const Container = styled.div `
     align-items: center;
     height:100vh;
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
@@ -34,6 +34,7 @@ export const Container = styled.section `
     display: flex;
     flex-direction: column;
     padding: 50px 0px 0px 0px;
+    justify-content: center;
 `
 
 export const Title = styled.h2 `
@@ -62,7 +63,7 @@ export const Stars = styled.div `
     &:after{
         content: " ";
         position: absolute;
-        top: 2000px;
+        top:   ;
         width: 1px;
         height: 1px;
         background: transparent;

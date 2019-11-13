@@ -2,7 +2,7 @@ import React from 'react';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import MainPage from '../pages/main/index';
+import MainPage from '../pages/login/index';
 
 const Routes = () => (
   <BrowserRouter>

@@ -2,12 +2,14 @@ import React from 'react';
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import MainPage from '../pages/login/index';
+import MainPage from '../pages/main/index';
+import LoginPage from '../pages/login/index';
 
 const Routes = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/" component={MainPage} />
+      <Route path = "/login" component={LoginPage} />
     </Switch>
   </BrowserRouter>
 );

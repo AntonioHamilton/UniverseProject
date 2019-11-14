@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import MainPage from '../pages/main/index';
 import LoginPage from '../pages/login/index';
 
+//Toda vez que vc criar uma tag Route, ele vai criar uma rota, aí vc coloca o path da url, e o component é a página.
 const Routes = () => (
   <BrowserRouter>
     <Switch>

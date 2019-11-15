@@ -25,7 +25,7 @@ const animStar = keyframes `
 
 export const Container = styled.div `
     align-items: center;
-    height:100vh;
+    height:94.6%;
     background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     overflow: hidden;
     border-bottom-style: double;

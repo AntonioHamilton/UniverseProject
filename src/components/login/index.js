@@ -5,9 +5,9 @@ export default class Login extends React.Component {
     render () {
         return (
             <ContainerLogin>
-                <Form>
+                <Form action="http://universe-project.herokuapp.com/Login" method="post">
                     <Text>UniverseProject</Text>
-                    <Usuario type="email" name="login" placeholder="Username"></Usuario>
+                    <Usuario type="text" name="login" placeholder="Username"></Usuario>
                     <Senha type="password" name="password" placeholder="Password"></Senha>
                     <ButtonLogin type="submit" >
                         <TextButton>login</TextButton>

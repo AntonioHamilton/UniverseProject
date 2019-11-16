@@ -19,14 +19,14 @@ export const ContainerLogin = styled.div `
         height: 65%;
     }
     @media (min-width: 700px) and (max-width: 1000px){
-        width: 35%;
+        width: 40%;
     }
     @media (min-width: 376px) and (max-width:699px){
-        width: 60%;
+        width: 50%;
         height: 65%;
     }
     @media (min-width: 0px) and (max-width:375px) {
-        width: 65%;
+        width: 60%;
         height: 63%;
     }
     @media (min-height: 1366px){
@@ -36,16 +36,16 @@ export const ContainerLogin = styled.div `
         height: 38%;
     }
     @media (min-height: 900px) and (max-height: 1023px){
-        height: 50%;
+        height: 43%;
     }
-    @media (min-height: 731px) and (max-height: 820px){
+    @media (min-height: 731px) and (max-height: 899px){
         height: 55%;
     }
     @media (max-height: 569px){
         height: 76%;
     }
     @media (max-height: 440px){
-        height: 97%;
+        height: 98%;
     }
     
 `

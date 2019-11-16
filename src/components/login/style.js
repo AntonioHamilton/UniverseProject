@@ -15,6 +15,39 @@ export const ContainerLogin = styled.div `
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (min-width: 700px) and (max-width: 2000px){
+        height: 65%;
+    }
+    @media (min-width: 700px) and (max-width: 1000px){
+        width: 35%;
+    }
+    @media (min-width: 376px) and (max-width:699px){
+        width: 60%;
+        height: 65%;
+    }
+    @media (min-width: 0px) and (max-width:375px) {
+        width: 65%;
+        height: 63%;
+    }
+    @media (min-height: 1366px){
+        height: 33%;
+    }
+    @media (min-height: 1024px) and (max-height: 1365px){
+        height: 38%;
+    }
+    @media (min-height: 900px) and (max-height: 1023px){
+        height: 50%;
+    }
+    @media (min-height: 731px) and (max-height: 820px){
+        height: 55%;
+    }
+    @media (max-height: 569px){
+        height: 76%;
+    }
+    @media (max-height: 440px){
+        height: 97%;
+    }
+    
 `
 
 export const Form = styled.form `
@@ -30,6 +63,13 @@ export const Text = styled.p `
     font-size: 36px;
     color: white;
     font-family: 'Dosis', sans-serif;
+    @media (min-width: 0px) and (max-width:384px) {
+        font-size: 30px;
+    }
+    @media (max-height: 440px){
+        font-size:30px;
+        padding: 0px 0px 20px 0px;
+    }
 `
 
 export const Usuario = styled.input `
@@ -64,6 +104,9 @@ export const ButtonLogin = styled.button `
     padding: 23px;
     background: #10151E;
     border: 0;
+    :hover{
+        background: #0F131B;
+    }
 `
 export const TextButton = styled.a `
     margin: 0;
@@ -72,7 +115,7 @@ export const TextButton = styled.a `
     text-decoration: none;
     color: white;
     font-family: 'Dosis', sans-serif;
-   
+    
 `
 export const NewUserText = styled.a `
     margin: 50px 0px 0px 0px;

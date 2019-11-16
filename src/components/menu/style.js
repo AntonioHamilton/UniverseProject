@@ -15,7 +15,7 @@ export const Menu = styled.menu `
     border-bottom-color: coral;
     border-bottom-width: thin;
 `
-export const Joke = styled.a `
+export const Login = styled.a `
     color: white;
     text-decoration: none;
     margin-right: 50px;

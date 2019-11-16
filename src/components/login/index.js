@@ -13,7 +13,7 @@ export default class Login extends React.Component {
                         <TextButton>login</TextButton>
                     </ButtonLogin>
                     <NewUserText>Não possui conta? 
-                        <NewUser href="/#App"> Inscreva-se</NewUser>
+                        <NewUser href="/inscricao"> Inscreva-se</NewUser>
                     </NewUserText>
                 </Form>
             </ContainerLogin>

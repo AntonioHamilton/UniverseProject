@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie'
-import { Menu, Nav, Link, Joke } from './style';
+import { Menu, Nav, Link, Login } from './style';
 
 import animationData from '../../assets/3169-world.json'
 
@@ -34,7 +34,7 @@ class MenuComp extends React.Component {
                     <Nav><Link href="/#About">Sobre nós</Link></Nav>
                     <Nav><Link href="/#Contact">Contato</Link></Nav>
                 </Nav>
-                <Joke className="joke" href="Joke">Teste</Joke>
+                <Login className="login" href="/login">Login</Login>
             </Menu>
         )
     }

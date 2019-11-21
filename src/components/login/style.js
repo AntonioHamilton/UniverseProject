@@ -111,7 +111,7 @@ export const ButtonLogin = styled.button `
 export const TextButton = styled.a `
     margin: 0;
     padding: 0;
-    border 0;
+    border: 0;
     text-decoration: none;
     color: white;
     font-family: 'Dosis', sans-serif;

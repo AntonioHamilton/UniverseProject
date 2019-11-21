@@ -23,8 +23,8 @@ class MenuComp extends React.Component {
                 <Link href="#image">
                     <Lottie 
                         options={defaultOptions}
-                        height={50}
-                        width={50}
+                        height={30}
+                        width={30}
                         isStopped={false}
                         isPaused={false}
                     />

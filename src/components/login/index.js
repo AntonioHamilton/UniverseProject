@@ -33,7 +33,7 @@ export default class Login extends React.Component {
         return (
             <ContainerLogin>
                 <Form onSubmit={this.handleSubmit}>
-                    <Text>UniverseProject</Text>
+                    <a style={{"text-decoration":"none"}} href="/"><Text>UniverseProject</Text></a>
                     <Usuario type="text" placeholder="Username" onChange={this.handleChangeName}></Usuario>
                     <Senha type="password" placeholder="Password" onChange={this.handleChangePassword}></Senha>
                     <ButtonLogin type="submit" >

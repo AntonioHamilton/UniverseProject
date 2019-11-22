@@ -14,7 +14,6 @@ export const Container = styled.div `
     padding: 0;
     justify-content: center;
     height: 100%;
-    padding-bottom: 30px;
 `
 
 const multiple_box_shadow = ( n )  => {
@@ -45,11 +44,11 @@ export const Stars = styled.div `
     height: 1px;
     background: transparent;
     box-shadow: ${shadows.small};
-    animation			: ${animStar} 50s linear infinite;
+    animation: ${animStar} 50s linear infinite;
     &:after{
         content: " ";
-        position: absolute;
-        top: 0;
+        position: relative;
+        top: 0px;
         width: 1px;
         height: 1px;
         background: transparent;
@@ -61,11 +60,11 @@ export const Stars2 = styled.div `
     height: 2px;
     background: transparent;
     box-shadow: ${shadows.medium};
-    animation			: ${animStar} 100s linear infinite;
+    animation: ${animStar} 100s linear infinite;
     &:after{
         content: " ";
-        position: absolute;
-        top: 2000px;
+        position: relative;
+        top: 0px;
         width: 2px;
         height: 2px;
         background: transparent;
@@ -78,11 +77,11 @@ export const Stars3 = styled.div `
     height: 3px;
     background: transparent;
     box-shadow: ${shadows.big};
-    animation			: ${animStar} 150s linear infinite;
+    animation: ${animStar} 150s linear infinite;
     &:after{
         content: " ";
-        position: absolute;
-        top: 2000px;
+        position: relative;
+        top: 0px;
         width: 3px;
         height: 3px;
         background: transparent;

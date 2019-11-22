@@ -21,7 +21,7 @@ export default class Content2 extends Component {
 
     render () {
         return (
-            <Container>
+            <Container id={this.props.id}>
                 <Title>{this.props.title}</Title>
                 <Container2>    
                     {this.state.card.map((item)=>{

@@ -10,9 +10,8 @@ export default class IndexPage extends Component {
         "height": "100%",
         "width": "100%",
         "display": "list-item",
-        "position": "absolute",
-        "scrollbar-width":"none",
-        "scrollbar-height": "none"}}>
+        "position": "absolute"
+        }}>
         <Container >
           <ContainerLogin></ContainerLogin>
         </Container>

@@ -148,7 +148,6 @@ export const Form = styled.form `
     align-items:center;
 `
 export const Text = styled.p `
-    padding: 0px 0px 40px 0px;
     font-size: 36px;
     color: white;
     font-family: 'Dosis', sans-serif;
@@ -162,7 +161,8 @@ export const Text = styled.p `
 `
 
 export const Usuario = styled.input `
-    margin: 50px 0px 25x 0px;
+    border-radius: 10px;
+    margin: 50px 0px 25 0px;
     padding: 10px 5px;
     height: 10%;
     width: 80%;
@@ -172,6 +172,7 @@ export const Usuario = styled.input `
 `
 
 export const Senha = styled.input `
+    border-radius: 10px;
     margin: 25px 0px 0px 0px;
     padding: 10px 5px;
     height: 10%;
@@ -182,6 +183,7 @@ export const Senha = styled.input `
 `
 
 export const ButtonLogin = styled.button `
+    border-radius: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,6 +197,7 @@ export const ButtonLogin = styled.button `
     border: 0;
     :hover{
         background: #0F131B;
+        box-shadow: 0px 1px 5px rgba(46, 229, 157, 0.4);
     }
 `
 export const TextButton = styled.a `

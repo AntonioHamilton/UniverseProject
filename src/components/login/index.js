@@ -24,6 +24,7 @@ export default class Login extends React.Component {
         axios.post('https://universe-project.herokuapp.com/Login', {login:this.state.login, password:this.state.password}).then((result)=>{
             const token = result.data.token;
             this.setState({token});
+            window.location.href = '/system'
         }).catch((err)=>{
             console.log(err)
         })

@@ -33,6 +33,7 @@ export const Login = styled.a `
     :hover {
         color: orange;
         text-decoration: underline;
+        cursor: Pointer;
     };
     @media (max-width: 600px) {
         flex-direction:column;

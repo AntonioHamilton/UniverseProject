@@ -5,7 +5,8 @@ export const GlobalStyle = createGlobalStyle `
         margin: 0px;
         padding: 0px;
     }
-    body {
+    html, body {
         height: 100%;
+        background-color: #C3E6F5;
     }
 `

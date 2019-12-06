@@ -16,7 +16,7 @@ export const Container = styled.div `
     height: 100%;
 `
 
-const multiple_box_shadow = ( n )  => {
+const multiple_box_shadow = n => {
   let value = `${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px  #FFF`;
   for(let i = 2; i <= n; i++){
     value = `${value}, ${Math.floor(Math.random() * 2000)}px  ${Math.floor(Math.random() * 2000)}px  #FFF`
@@ -95,7 +95,7 @@ export const ContainerLogin = styled.div `
     top: 0;
     left: 0;
     display: flex;
-    height: 48%;
+    height: auto;
     width: 30%;
     border-top: solid;
     border-bottom: solid;
@@ -103,40 +103,7 @@ export const ContainerLogin = styled.div `
     border-color: #FFFFFF;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    @media (min-width: 700px) and (max-width: 2000px){
-        height: 65%;
-    }
-    @media (min-width: 700px) and (max-width: 1000px){
-        width: 40%;
-    }
-    @media (min-width: 376px) and (max-width:699px){
-        width: 50%;
-        height: 65%;
-    }
-    @media (min-width: 0px) and (max-width:375px) {
-        width: 60%;
-        height: 63%;
-    }
-    @media (min-height: 1366px){
-        height: 33%;
-    }
-    @media (min-height: 1024px) and (max-height: 1365px){
-        height: 38%;
-    }
-    @media (min-height: 900px) and (max-height: 1023px){
-        height: 43%;
-    }
-    @media (min-height: 731px) and (max-height: 899px){
-        height: 55%;
-    }
-    @media (max-height: 569px){
-        height: 76%;
-    }
-    @media (max-height: 440px){
-        height: 98%;
-    }
-    
+    align-items: center;    
 `
 
 export const Form = styled.form `
@@ -188,11 +155,10 @@ export const ButtonLogin = styled.button `
     justify-content: center;
     align-items: center;
     margin: 50px 0px 0px 0px;   
-    padding: 0px 5px;
     height: 30%;
     width: 80%;
     font-size: 16px;
-    padding: 23px;
+    padding: 18px;
     background: #10151E;
     border: 0;
     :hover{
@@ -200,6 +166,7 @@ export const ButtonLogin = styled.button `
         box-shadow: 0px 1px 5px rgba(46, 229, 157, 0.4);
     }
 `
+
 export const TextButton = styled.a `
     margin: 0;
     padding: 0;

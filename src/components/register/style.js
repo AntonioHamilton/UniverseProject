@@ -22,3 +22,21 @@ export const Response = styled.p `
     margin:20px 0px 10px 0px;
     color: white;
 `
+
+export const ButtonRegister = styled.button `
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px 0px 0px;   
+    height: 30%;
+    width: 80%;
+    font-size: 16px;
+    padding: 18px;
+    background: #10151E;
+    border: 0;
+    :hover{
+        background: #0F131B;
+        box-shadow: 0px 1px 5px rgba(46, 229, 157, 0.4);
+    }
+`

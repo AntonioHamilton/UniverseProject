@@ -1,6 +1,6 @@
 import React from 'react'
-import {Container, Stars, Stars2, Stars3, Text, Form, ContainerLogin as ContainerRegister, NewUser, NewUserText, ButtonLogin as ButtonRegister, TextButton} from '../login/style'
-import {ItemForm, ItemInForm, Response} from './style'
+import {Container, Stars, Stars2, Stars3, Text, Form, ContainerLogin as ContainerRegister, NewUser, NewUserText, TextButton} from '../login/style'
+import {ItemForm, ItemInForm, Response, ButtonRegister} from './style'
 import axios from 'axios'
 
 export default class RegisterPage extends React.Component {
@@ -12,6 +12,7 @@ export default class RegisterPage extends React.Component {
         password:"",
         type: "USER",
         check: true,
+        disable: true,
         response: "",
         status: ""
     }
@@ -32,6 +33,11 @@ export default class RegisterPage extends React.Component {
         this.setState({password: e.target.value})
     }
 
+    VerifyPassword = e => {
+        const disable = !(this.state.password === e.target.value);
+        this.setState ({ disable })
+    }
+
     handleChangeAdmin = e => {
         this.setState({check: !this.state.check});
         this.setState({type: this.state.check ? "ADMIN" : "USER"})
@@ -49,7 +55,7 @@ export default class RegisterPage extends React.Component {
         }).then((response)=>{
             this.setState({response: response.data});
             this.setState({status: response.status});
-            console.log(this.state.status)
+            window.location.href = '/login';
         }).catch(()=>{
             this.setState({response: "Esse usuário já foi criado!"});
             this.setState({status: 500});
@@ -76,10 +82,11 @@ export default class RegisterPage extends React.Component {
                             <ItemForm type="text" placeholder="Username" onChange={this.handleChangeName}/>
                             <ItemForm type="text" placeholder="E-mail" onChange={this.handleChangeEmail}/>
                             <ItemForm type="password" placeholder="Password" onChange={this.handleChangePassword}/>
+                            <ItemForm type="password" placeholder="verify your password" onChange={this.VerifyPassword}/>
                             <ItemInForm>
                                 ADMIN <input type="checkbox" style={{marginLeft:"5px"}} onChange={this.handleChangeAdmin}/>
                             </ItemInForm>
-                            <ButtonRegister style={{marginTop:"20px"}} type="submit" >
+                            <ButtonRegister style={{marginTop:"20px"}} disabled={this.state.disable} type="submit" >
                                 <TextButton>Registrar</TextButton>
                             </ButtonRegister>
                             <NewUserText style={{marginTop:"20px"}}>Já possui conta? 

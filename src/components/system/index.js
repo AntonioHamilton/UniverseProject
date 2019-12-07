@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
-import {Header, Filter, ItemFilter, FilterDiv, Content, Img, Container, Info} from './style'
+import {Header, Filter, ItemFilter, FilterDiv, Content, Img, Container, Info, Logo, Person} from './style'
 import img from '../../assets/images/planeta.png'
 
 export default class system extends Component {
 
     state = {
         show: [],
+        person: [{username:'tonho', login:'1'}]
     }
 
     showAll = () => {
@@ -25,10 +26,26 @@ export default class system extends Component {
     }
 
     render () {
+
+        const login = '1';
+
         return (
             <div style={{backgroundColor: "#C3E6F5"}}>
                 <link href="https://fonts.googleapis.com/css?family=Arsenal&display=swap" rel="stylesheet"></link>
-                <Header></Header>
+                <Header>
+                    <Logo>
+                        Universe Project
+                    </Logo>
+                    <Person>
+                        { this.state.person.map((item, index, arr) => 
+                            {
+                                if (item.login === login) {
+                                    return (item.username)
+                                }
+                            })
+                        }
+                    </Person>
+                </Header>
                 <Filter>
                     <FilterDiv>
                         <ItemFilter onClick={this.showAll}>Todos</ItemFilter>

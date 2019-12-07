@@ -4,6 +4,23 @@ export const Header = styled.div `
     width: 100%;
     height: 50px;
     background-color: #C3E6F5;
+    display: flex;
+    font-size: x-large;
+    color: black;
+    font-weight: bolder;
+`
+
+export const Logo = styled.div `
+    width: 100%;
+    display: flex;
+    padding-left: 50px;
+`
+
+export const Person = styled.div `
+    width: 100%;
+    display: flex;
+    place-content: flex-end;
+    padding-right: 50px;
 `
 
 export const Filter = styled.div `

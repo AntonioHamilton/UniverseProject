@@ -16,80 +16,6 @@ export const Container = styled.div `
     height: 100%;
 `
 
-const multiple_box_shadow = n => {
-  let value = `${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px  #FFF`;
-  for(let i = 2; i <= n; i++){
-    value = `${value}, ${Math.floor(Math.random() * 2000)}px  ${Math.floor(Math.random() * 2000)}px  #FFF`
-  }
-  return value;
-};
-
-const shadows = {
-    small: multiple_box_shadow(700),
-    medium: multiple_box_shadow(200),
-    big: multiple_box_shadow(100)
-};
-
-const animStar = keyframes ` 
-  from	{
-    transform: translateY(-2500px)
-  }
-  to  {
-    transform: translateY(0px)
-  }
-`;
-
-export const Stars = styled.div `
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: ${shadows.small};
-    animation: ${animStar} 50s linear infinite;
-    &:after{
-        content: " ";
-        position: relative;
-        top: 0px;
-        width: 1px;
-        height: 1px;
-        background: transparent;
-        box-shadow: ${shadows.small};
-    }
-`
-export const Stars2 = styled.div `
-    width: 2px;
-    height: 2px;
-    background: transparent;
-    box-shadow: ${shadows.medium};
-    animation: ${animStar} 100s linear infinite;
-    &:after{
-        content: " ";
-        position: relative;
-        top: 0px;
-        width: 2px;
-        height: 2px;
-        background: transparent;
-        box-shadow: ${shadows.medium};
-    }
-`
-
-export const Stars3 = styled.div `
-    width: 3px;
-    height: 3px;
-    background: transparent;
-    box-shadow: ${shadows.big};
-    animation: ${animStar} 150s linear infinite;
-    &:after{
-        content: " ";
-        position: relative;
-        top: 0px;
-        width: 3px;
-        height: 3px;
-        background: transparent;
-        box-shadow: ${shadows.big};
-    }
-`
-
-
 export const ContainerLogin = styled.div `
     margin: 0px;
     top: 0;
@@ -103,7 +29,14 @@ export const ContainerLogin = styled.div `
     border-color: #FFFFFF;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    padding: 20px;
+    @media (max-width: 850px) {
+        width: 40%;
+    }
+    @media (max-width: 650px) {
+        width: auto;
+    }          
 `
 
 export const Form = styled.form `
@@ -128,6 +61,7 @@ export const Text = styled.p `
 `
 
 export const Usuario = styled.input `
+    outline: none;
     border-radius: 10px;
     margin: 50px 0px 25 0px;
     padding: 10px 5px;
@@ -139,6 +73,7 @@ export const Usuario = styled.input `
 `
 
 export const Senha = styled.input `
+    outline: none;
     border-radius: 10px;
     margin: 25px 0px 0px 0px;
     padding: 10px 5px;
@@ -150,6 +85,7 @@ export const Senha = styled.input `
 `
 
 export const ButtonLogin = styled.button `
+    outline: none;
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -196,4 +132,75 @@ export const NewUser = styled.a `
     }
 `
 
-
+const multiple_box_shadow = n => {
+    let value = `${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px  #FFF`;
+    for(let i = 2; i <= n; i++){
+      value = `${value}, ${Math.floor(Math.random() * 2000)}px  ${Math.floor(Math.random() * 2000)}px  #FFF`
+    }
+    return value;
+  };
+  
+  const shadows = {
+      small: multiple_box_shadow(700),
+      medium: multiple_box_shadow(200),
+      big: multiple_box_shadow(100)
+  };
+  
+  const animStar = keyframes ` 
+    from	{
+      transform: translateY(-2500px)
+    }
+    to  {
+      transform: translateY(0px)
+    }
+  `;
+  
+  export const Stars = styled.div `
+      width: 1px;
+      height: 1px;
+      background: transparent;
+      box-shadow: ${shadows.small};
+      animation: ${animStar} 50s linear infinite;
+      &:after{
+          content: " ";
+          position: relative;
+          top: 0px;
+          width: 1px;
+          height: 1px;
+          background: transparent;
+          box-shadow: ${shadows.small};
+      }
+  `
+  export const Stars2 = styled.div `
+      width: 2px;
+      height: 2px;
+      background: transparent;
+      box-shadow: ${shadows.medium};
+      animation: ${animStar} 100s linear infinite;
+      &:after{
+          content: " ";
+          position: relative;
+          top: 0px;
+          width: 2px;
+          height: 2px;
+          background: transparent;
+          box-shadow: ${shadows.medium};
+      }
+  `
+  
+  export const Stars3 = styled.div `
+      width: 3px;
+      height: 3px;
+      background: transparent;
+      box-shadow: ${shadows.big};
+      animation: ${animStar} 150s linear infinite;
+      &:after{
+          content: " ";
+          position: relative;
+          top: 0px;
+          width: 3px;
+          height: 3px;
+          background: transparent;
+          box-shadow: ${shadows.big};
+      }
+  `

@@ -83,9 +83,6 @@ export default class RegisterPage extends React.Component {
                             <ItemForm type="text" placeholder="E-mail" onChange={this.handleChangeEmail}/>
                             <ItemForm type="password" placeholder="Password" onChange={this.handleChangePassword}/>
                             <ItemForm type="password" placeholder="verify your password" onChange={this.VerifyPassword}/>
-                            <ItemInForm>
-                                ADMIN <input type="checkbox" style={{marginLeft:"5px"}} onChange={this.handleChangeAdmin}/>
-                            </ItemInForm>
                             <ButtonRegister style={{marginTop:"20px"}} disabled={this.state.disable} type="submit" >
                                 <TextButton>Registrar</TextButton>
                             </ButtonRegister>

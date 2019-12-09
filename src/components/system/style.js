@@ -59,6 +59,7 @@ export const FilterDiv = styled.div `
 `
 
 export const ItemFilter = styled.button `
+    outline: none;
     border: none;
     background-color: #c4c4c4;
     border-radius: 200px;

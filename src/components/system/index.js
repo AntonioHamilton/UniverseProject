@@ -34,7 +34,7 @@ export default class system extends Component {
                 <link href="https://fonts.googleapis.com/css?family=Arsenal&display=swap" rel="stylesheet"></link>
                 <Header>
                     <Logo>
-                        Universe Project
+                        <a href="/" style={{textDecoration:'none', color:'black'}}>Universe Project</a>
                     </Logo>
                     <Person>
                         { this.state.person.map((item, index, arr) => 

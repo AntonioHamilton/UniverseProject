@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const ItemForm = styled.input `
-    margin: 2px;
+    outline: none;
+    margin: 5px;
     padding: 10px 5px;
     height: 10%;
     width: 80%;
@@ -35,6 +36,7 @@ export const ButtonRegister = styled.button `
     padding: 18px;
     background: #10151E;
     border: 0;
+    outline: none;
     :hover{
         background: #0F131B;
         box-shadow: 0px 1px 5px rgba(46, 229, 157, 0.4);

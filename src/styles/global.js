@@ -1,12 +1,19 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle `
-    * {
-        margin: 0px;
-        padding: 0px;
+   * {
+        margin: 0;
+        padding: 0;
     }
-    html, body {
+    @font-face {
+        font-family: 'Montserrat';
+        src: url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+    }
+    
+    html, body, #root, .App {
         height: 100%;
-        background-color: #C3E6F5;
+        background-color: #000000;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
     }
 `

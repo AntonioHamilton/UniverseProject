@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Container2 = styled.div `
     display: flex;
     place-content: space-evenly;
-    background-color: #01338b;
     padding: 40px 0px 0px 0px;
     height: auto;
     @media(max-width: 460px){

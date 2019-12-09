@@ -6,7 +6,7 @@ export const Container = styled.div `
     justify-content: center;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     margin-top: 40px;
     @media(max-width: 850px) {
         margin-top: 50px;
@@ -16,6 +16,8 @@ export const Container = styled.div `
 `
 
 export const SlideShow = styled.div `
+    background-image: url(${({prop1}) => prop1});
+    background-size: cover;
     display: flex;
     height: 100%;
     justify-content: center;
@@ -30,7 +32,7 @@ export const SlideImg = styled.img `
     border-radius: 70px;
     position: relative;
     width: 70%;
-    height: 85vh;
+    height: 70vh;
     left: 10%;
     @media (max-width: 1000px) {
         height: 70vh;
@@ -43,6 +45,7 @@ export const SlideImg = styled.img `
         width: 80%;
         display: flex;
         align-self: center;
+        opacity: 0;
     }
 `
 
@@ -54,6 +57,7 @@ export const SlideInfo = styled.div `
     align-self: center;
     right: 10%;
     background-color: #FFFFFF;
+    color: black;
     padding: 20px;
     text-align: -webkit-center;
     @media (max-width: 1000px) {
@@ -68,6 +72,7 @@ export const SlideInfo = styled.div `
     @media (max-width: 850px) {
         height: 60%;
         right: 0;
+        top: -30px;
     }
 `
 

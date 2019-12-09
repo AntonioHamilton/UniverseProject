@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div `
     align-items: center;
-    background-color: #01338b;
     /*overflow: hidden;*/
     /*
     border-bottom-style: double;

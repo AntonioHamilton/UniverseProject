@@ -7,10 +7,9 @@ export const Menu = styled.menu `
     height: auto !important;
     justify-content: space-between;
     align-items: center;
-    font-family: cursive;
     font-size: x-large;
     color: white;
-    background-color:#000002;
+    background-color: #070709;
     border-bottom-style: double;
     border-bottom-color: coral;
     border-bottom-width: thin;

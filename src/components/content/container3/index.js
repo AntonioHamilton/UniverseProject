@@ -3,8 +3,8 @@ import React, {Component} from 'react'
 import {Container} from './style'
 
 
-import porkAnimation from '../../../assets/pork-dance.json'
-import dogAnimation from '../../../assets/dancing-dog.json'
+import porkAnimation from '../../../assets/animations/pork-dance.json'
+import dogAnimation from '../../../assets/animations/dancing-dog.json'
 
 export default class Container3 extends Component {
 

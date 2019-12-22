@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container, Stars, Stars2, Stars3, Text, Form, ContainerLogin as ContainerRegister, NewUser, NewUserText, TextButton} from '../login/style'
-import {ItemForm, ItemInForm, Response, ButtonRegister} from './style'
+import {ItemForm, Response, ButtonRegister} from './style'
 import axios from 'axios'
 
 export default class RegisterPage extends React.Component {

@@ -1,112 +1,80 @@
 import styled from 'styled-components';
 
-export const Header = styled.div `
-    width: 100%;
-    height: 50px;
-    background-color: #C3E6F5;
-    display: flex;
-    font-size: x-large;
-    color: black;
-    font-weight: bolder;
-`
-
-export const Logo = styled.div `
-    width: 100%;
-    display: flex;
-    padding-left: 50px;
-`
-
-export const Person = styled.div `
-    width: 100%;
-    display: flex;
-    place-content: flex-end;
-    padding-right: 50px;
-`
-
-export const Filter = styled.div `
-    background-color: #C3E6F5;
-    height: auto;
-    padding: 7px 0px 7px 0px;
-    display: flex;
-    place-content: center;
-    @media (max-width: 600px) {
-        border-bottom: none;
-        border-right-style: double;
-        border-right-width: thin;
-        border-right-color: black;
-        width: 25%;
-        height: -webkit-fill-available;
-        position: sticky;
-        top: 0;
-    }
-`
-
-export const FilterDiv = styled.div `
-    width: 75%;
-    font-family: monospace;
-    display: flex;
-    place-content: space-evenly;
-    @media (min-width: 600px) {
-        align-self: center;
-    }
-    @media (max-width: 600px) {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        height:auto;
-    }
-`
-
-export const ItemFilter = styled.button `
-    outline: none;
-    border: none;
-    background-color: #c4c4c4;
-    border-radius: 200px;
-    width: 250px;
-    height: 50px;
-    font-size: 20px;
-    :hover {
-        cursor: pointer;
-        color: black;
-        text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-        display: flex;
-        flex-direction: column;
-    }
-`
-
-export const Content = styled.div `
-    height: 200px;
-    width: 200px;
-    background-color: #6BFFDC;
-    border-radius: 50px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-`
-
-export const Img = styled.img `
-    width: 130px;
-    height: 130px;
-    top: 200px;
-    position: relative;
-    top: -62px;
-`
-
 export const Container = styled.div `
-    background-color: #C3E6F5;
-    display: grid;
-    margin-top: 90px;
-    grid-template-columns: repeat(5, 20%);
-    place-items: center;
-    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: white;
+
+`
+export const Head = styled.div `
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 `
 
-export const Info = styled.p `
-    margin-top: 5px;
-    position: relative;
-    top: -70px;
-    font-size: 20px;
-    font-family: 'Arsenal', sans-serif;
+export const WrapInput = styled.div `
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+`
+
+export const Menu = styled.div `
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 230px 0px 20px;
+    width: 40px;
+    height: 40px;
+`
+export const ItensMenu = styled.div `
+    display: flex;
+    position: fixed;
+    top: 10vh;
+    left: ${({enable}) => enable ? 0 : -600}px;
+    width: 100px;
+    height: 90vh;
+    background: red;
+`
+export const Item = styled.div `
+
+`
+
+export const TextMenu = styled.h1 `
+
+`
+export const Lupa = styled.img `
+    height: 33px;
+`
+export const Search = styled.input `
+    width: 100%;
+    height: 100%;
+    padding: 0px 15px;
+    border: 0;
+    outline: none;
+    font-size: 24px;
+`
+
+export const MenuUser = styled.div `
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const UserName = styled.h3`
+    color: black;
+    font-size: 16px;
+    padding: 0px 15px;
+`
+
+export const User = styled.img `
+    margin: 0px 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 9999999px;
+    background: black; 
 `

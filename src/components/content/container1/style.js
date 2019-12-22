@@ -12,7 +12,10 @@ export const Container = styled.div `
     flex-direction: column;
     padding: 40px 0px 40px 0px;
     justify-content: center;
-    height: auto;
+    height: 100vh;
+    @media (max-width: 450px) {
+        height: auto;
+    }
 `
 
 export const Title = styled.h2 `

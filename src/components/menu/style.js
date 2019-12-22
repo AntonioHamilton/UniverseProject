@@ -9,6 +9,7 @@ export const Menu = styled.menu `
     align-items: center;
     font-size: x-large;
     color: white;
+    padding: 5px 0px;
     background-color: #070709;
     border-bottom-style: double;
     border-bottom-color: coral;

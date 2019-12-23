@@ -13,6 +13,8 @@ export const Head = styled.div `
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid #E6EAEA;
+    background: #F4F7F6;
 `
 
 export const WrapInput = styled.div `
@@ -35,12 +37,31 @@ export const ItensMenu = styled.div `
     display: flex;
     position: fixed;
     top: 10vh;
-    left: ${({enable}) => enable ? 0 : -600}px;
-    width: 100px;
+    left: ${({enableMenu}) => enableMenu ? 0 : -600}px;
+    width: 200px;
     height: 90vh;
-    background: red;
+    border-right: 1px solid #E6EAEA;
+    border-top: 1px solid #E6EAEA;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
 `
-export const Item = styled.div `
+export const ItemMenu = styled.div `
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #E6EAEA;
+    width: 200px;
+    height: 18vh;
+    background: #F4F7F6;
+    :hover {
+        background: white;
+        cursor: Pointer;
+    };
+`
+export const ItemMenu2 = styled.div `
 
 `
 
@@ -57,6 +78,7 @@ export const Search = styled.input `
     border: 0;
     outline: none;
     font-size: 24px;
+    background: #F4F7F6;
 `
 
 export const MenuUser = styled.div `
@@ -78,3 +100,4 @@ export const User = styled.img `
     border-radius: 9999999px;
     background: black; 
 `
+

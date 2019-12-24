@@ -64,7 +64,7 @@ export const Usuario = styled.input `
     outline: none;
     border-radius: 10px;
     margin: 50px 0px 25 0px;
-    padding: 10px 5px;
+    padding: 10px 10px;
     height: 10%;
     width: 80%;
     font-size: 14px;
@@ -76,7 +76,7 @@ export const Senha = styled.input `
     outline: none;
     border-radius: 10px;
     margin: 25px 0px 0px 0px;
-    padding: 10px 5px;
+    padding: 10px 10px;
     height: 10%;
     width: 80%;
     font-size: 14px;

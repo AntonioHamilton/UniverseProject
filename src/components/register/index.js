@@ -80,9 +80,9 @@ export default class RegisterPage extends React.Component {
                             <Response cor={this.state.status}>{this.state.response}</Response>
                             <ItemForm type="text" placeholder="Login" onChange={this.handleChangeLogin}/>
                             <ItemForm type="text" placeholder="Username" onChange={this.handleChangeName}/>
-                            <ItemForm type="text" placeholder="E-mail" onChange={this.handleChangeEmail}/>
+                            <ItemForm type="email" placeholder="E-mail" onChange={this.handleChangeEmail}/>
                             <ItemForm type="password" placeholder="Password" onChange={this.handleChangePassword}/>
-                            <ItemForm type="password" placeholder="verify your password" onChange={this.VerifyPassword}/>
+                            <ItemForm type="password" placeholder="Verify your password" onChange={this.VerifyPassword}/>
                             <ButtonRegister style={{marginTop:"20px"}} disabled={this.state.disable} type="submit" >
                                 <TextButton>Registrar</TextButton>
                             </ButtonRegister>

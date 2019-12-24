@@ -16,3 +16,16 @@ export const WrapSlider = styled.div `
     width: 100vh;
     background: white;
 `
+
+export const WrapPost = styled.div `
+
+`
+
+export const Post = styled.div `
+
+`
+
+export const ImgSlider = styled.img `
+
+`
+

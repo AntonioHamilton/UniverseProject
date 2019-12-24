@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ItemForm = styled.input `
     outline: none;
     margin: 5px;
-    padding: 10px 5px;
+    padding: 10px 10px;
     height: 10%;
     width: 80%;
     font-size: 14px;

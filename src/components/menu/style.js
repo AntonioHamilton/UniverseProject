@@ -10,9 +10,9 @@ export const Menu = styled.menu `
     font-size: x-large;
     color: white;
     padding: 5px 0px;
-    background-color: #070709;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
     border-bottom-style: double;
-    border-bottom-color: coral;
+    border-bottom-color: #40455C;
     border-bottom-width: thin;
     @media (max-width: 600px) {
         border: none;
@@ -29,9 +29,9 @@ export const Menu = styled.menu `
 export const Login = styled.a `
     color: white;
     text-decoration: none;
-    margin-right: 10px;
+    margin-right: 15px;
     :hover {
-        color: orange;
+     
         text-decoration: underline;
         cursor: Pointer;
     };
@@ -49,7 +49,7 @@ export const Link = styled.a `
     text-decoration: none;
     padding: 0px 10px 0px 10px;
     :hover {
-        color: orange;
+      
         text-decoration: underline;
         cursor: Pointer;
     };

@@ -63,7 +63,7 @@ export const ItemMenu = styled.a `
     height: 15vh;
     background: white;
     :hover {
-        background: black;
+        background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
         color: white;
         cursor: Pointer;
     };
@@ -96,7 +96,7 @@ export const MenuUser = styled.div `
 export const UserName = styled.h3`
     color: black;
     font-size: 16px;
-    padding: 0px 15px;
+    padding: 0px 10px;
 `
 
 export const User = styled.img `
@@ -113,7 +113,7 @@ export const ItemSettings = styled.a `
     padding: 10px;
     transition: all 0.2s;
     :hover {
-        background: black;
+        background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);;
         color: white;
     }
     display: flex;
@@ -131,7 +131,7 @@ export const WrapSettings = styled.div `
     position: fixed;
     height: 20vh;
     background: white;
-    width: 50vh;
+    width: 40vh;
     transition: all 0.5s;
     right: ${({enableSettings}) => enableSettings ? 0 : -600}px;
     top: 0;
@@ -144,5 +144,5 @@ export const WrapItemSettings = styled.div `
     justify-content: center;
     align-items: center;
     height: 10vh;
-
+    border-bottom: black;
 `

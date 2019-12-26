@@ -7,9 +7,8 @@ import imgUser from '../../assets/icons/boneco.png'
 
 const SystemPage = () =>{
 
-  const aleatorio = Math.floor(Math.random()*100 % 3);
-  const fraseEntrada = ['Oi', 'Olá', 'Bem-vindo']
-  const fraseSaida = ['já vai?', 'como vai você?', 'tudo bem?']
+  const aleatorio = Math.floor(Math.random()*100 % 2);
+  const fraseSaida = ['já vai?', 'tudo bem?']
   const [enableMenu, setEnableMenu] = useState(false)
   const [nome, setNome] = useState('Yves')
   const [enableSettings, setSettings] = useState(false);
@@ -24,7 +23,6 @@ const SystemPage = () =>{
 
   return (
     <Container>
-        
         <Head>
           <WrapInput>
             <Menu enable={enableMenu}>
@@ -55,13 +53,13 @@ const SystemPage = () =>{
           </WrapInput>
 
           <MenuUser>
-            <UserName>{fraseEntrada[aleatorio]}, {nome}</UserName>            
+            <UserName>Oi, {nome}</UserName>            
             <User src={imgUser} src={imgUser} onClick={() => {
               setSettings(!enableSettings)}}  ></User>
             <WrapSettings enableSettings={enableSettings}>
               <WrapItemSettings>
-              <UserName style={{padding:'0 15px'}}>{nome}, {fraseSaida[aleatorio]}</UserName>
-                <User src={imgUser} style={{margin:'0 20px'}} onClick={() => setSettings(!enableSettings)}></User>
+                <UserName style={{padding:'0 0 0 0'}}>{nome}, {fraseSaida[aleatorio]}</UserName>
+                <User src={imgUser} style={{margin:'0 0 0 30px'}} onClick={() => setSettings(!enableSettings)}></User>
               </WrapItemSettings>
               <ItemSettings>CONFIGURAÇÕES</ItemSettings>
               <ItemSettings href="/">SAIR</ItemSettings>

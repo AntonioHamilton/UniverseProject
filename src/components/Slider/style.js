@@ -8,8 +8,6 @@ export const Container = styled.div `
     top: 0;
     left: 0;
     height: 89vh;
-    
-
     @media(max-width: 850px) {
         margin-top: 50px;
         height: auto;

@@ -25,7 +25,7 @@ const PlanetSlider = () => {
         alignSelf: 'center',
         height: 'auto',
     }
-    
+    /*
     const slides = {
         galaxia:{image: img, titulo:"Galáxia" , resumo:"Uma galáxia é um grande sistema, gravitacionalmente ligado, que consiste de estrelas, remanescentes de estrelas, um meio interestelar de gás e poeira, e um importante mas insuficientemente conhecido componente apelidado de matéria escura."},
         sistemas_planetarios:{image: img, titulo:"Sistemas planetários" , resumo:"Um sistema planetário consiste numa formação de objetos não estelares que orbitam uma estrela, tal como planetas, satélites naturais, asteroides, meteoros, cometas e poeira cósmica. Desde 27 de agosto de 2019, existem 4109 exoplanetas em 3059 sistemas descobertos, com 667 sistemas tendo mais de um planeta. "},
@@ -37,8 +37,10 @@ const PlanetSlider = () => {
         gigante_azul:{image: img, titulo:"Gigante azul" , resumo:"Em astronomia, uma estrela Gigante azul é uma estrela pesada, com massa maior que 18 vezes a massa do Sol, e muito quente e brilhante de tipo espectral O ou B. No Diagrama de Hertzsprung-Russell, Gigantes azuis são encontradas no canto superior esquerdo graças a sua luminosidade."},
         gigante_vermelha:{image: img, titulo:"Gigante vermelha" , resumo:"Uma gigante vermelha é uma estrela gigante luminosa de massa pequena ou intermediária, numa fase avançada da evolução estelar. A atmosfera exterior é inflada e tênue, fazendo com que o raio seja imenso e a temperatura superficial seja baixa."}
     }
-    
-
+    */
+   const slides = [
+    {image: img, titulo:"Galáxia" , resumo:"Uma galáxia é um grande sistema, gravitacionalmente ligado, que consiste de estrelas, remanescentes de estrelas, um meio interestelar de gás e poeira, e um importante mas insuficientemente conhecido componente apelidado de matéria escura."},
+   ]
     return (
     <Container style={{marginTop: '0px'}}>
         <Slide {...properties} style={SlideCss}>

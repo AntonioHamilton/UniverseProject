@@ -4,10 +4,10 @@ export const Container = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     top: 0;
     left: 0;
-    height: 100vh;
-    margin-top: 40px;
+    height: 89vh;
     @media(max-width: 850px) {
         margin-top: 50px;
         height: auto;
@@ -16,7 +16,7 @@ export const Container = styled.div `
 `
 
 export const SlideShow = styled.div `
-    background-image: url(${({prop1}) => prop1});
+    
     background-size: cover;
     display: flex;
     height: 100%;
@@ -29,11 +29,11 @@ export const SlideShow = styled.div `
 `
 
 export const SlideImg = styled.img `
-    border-radius: 70px;
+
     position: relative;
     width: 70%;
-    height: 70vh;
-    left: 10%;
+    height: 100%;
+    left: 5%;
     @media (max-width: 1000px) {
         height: 70vh;
         width: 60%;
@@ -55,7 +55,7 @@ export const SlideInfo = styled.div `
     width: 30%;
     height: 80%;
     align-self: center;
-    right: 10%;
+    right: 7%;
     background-color: #FFFFFF;
     color: black;
     padding: 20px;

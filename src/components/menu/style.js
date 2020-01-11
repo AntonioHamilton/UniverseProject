@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Menu = styled.menu `
+    z-index: 40;
     position: sticky;
     top: 0;
     display: flex;
@@ -9,10 +10,10 @@ export const Menu = styled.menu `
     align-items: center;
     font-size: x-large;
     color: white;
-    padding: 5px 0px;
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    padding: 10px 0px;
+    background: radial-gradient(ellipse at bottom, #540320 0%, #090A0F 100%);
     border-bottom-style: double;
-    border-bottom-color: #40455C;
+    border-bottom-color: #ffffff;
     border-bottom-width: thin;
     @media (max-width: 600px) {
         border: none;

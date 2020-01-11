@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div `
     align-items: center;
-    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    background: radial-gradient(ellipse at bottom, #540320 0%, #090A0F 100%);
     overflow: hidden;
     /*
     border-bottom-style: double;

@@ -2,28 +2,18 @@ import Lottie from 'react-lottie'
 import React, {Component} from 'react'
 import {Container} from './style'
 
-
-import porkAnimation from '../../../assets/animations/pork-dance.json'
-import dogAnimation from '../../../assets/animations/dancing-dog.json'
+import RocketAnimation from '../../../assets/animations/9386-banner-app-animation';
 
 export default class Container3 extends Component {
 
 
     render () {
 
-        const pork = {
-            loop: true,
-            autoplay: true, 
-            animationData: porkAnimation,
-            rendererSettings: {
-              preserveAspectRatio: 'xMidYMid slice'
-            }
-        };
 
-        const dog = {
+        const rocket = {
             loop: true,
             autoplay: true, 
-            animationData: dogAnimation,
+            animationData: RocketAnimation,
             rendererSettings: {
               preserveAspectRatio: 'xMidYMid slice'
             }
@@ -32,14 +22,7 @@ export default class Container3 extends Component {
         return (
             <Container>
                 <Lottie 
-                    options={pork}
-                    height={300}
-                    width={300}
-                    isStopped={false}
-                    isPaused={false}
-                />
-                <Lottie 
-                    options={dog}
+                    options={rocket}
                     height={300}
                     width={300}
                     isStopped={false}

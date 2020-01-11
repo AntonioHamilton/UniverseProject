@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Title, Description} from './style';
 import Lottie from 'react-lottie'
-import PhoneAnimation from '../../../assets/animations/1712-bms-rocket.json';
+import PhoneAnimation from '../../../assets/animations/9386-banner-app-animation';
 export default class Content1 extends React.Component {
     render () {
         const phone = {
@@ -12,7 +12,6 @@ export default class Content1 extends React.Component {
               preserveAspectRatio: 'xMidYMid slice'
             }
         };
-
 
         return (
             <Container id={this.props.id}>

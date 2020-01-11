@@ -5,10 +5,10 @@ export const Container = styled.div `
     justify-content: center;
     align-items: center;
     display: flex;
-    background: #0f0c29;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #e53935;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
 `
 export const FormTitle = styled.h1 `
     margin-bottom: 10px;
@@ -17,7 +17,7 @@ export const FormTitle = styled.h1 `
 export const WrapForm = styled.div `
     display: flex;
     flex-direction: column;
-    width: 30vh;
+    width: 50vh;
     height: 60vh;
     align-items: center;
     place-content: center;
@@ -45,6 +45,7 @@ export const Button = styled.a `
     :active {
         transform: translateY(2px)
     }
+    color: white;
 `
 
 export const WrapButtons = styled.div `

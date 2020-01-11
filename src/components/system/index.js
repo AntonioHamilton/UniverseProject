@@ -5,7 +5,7 @@ import imgLupa from '../../assets/icons/lupa.png'
 import imgUser from '../../assets/icons/boneco.png'
 
 
-const SystemPage = () =>{
+const SystemPage = ({ changeMenu }) =>{
 
   const aleatorio = Math.floor(Math.random()*100 % 2);
   const fraseSaida = ['já vai?', 'tudo bem?']
@@ -37,16 +37,16 @@ const SystemPage = () =>{
               />
               <ItensMenu enableMenu={enableMenu}>
              
-                <ItemMenu>Galáxia</ItemMenu>
-                <ItemMenu>Sistemas planetários</ItemMenu>
-                <ItemMenu>Planetas</ItemMenu>
-                <ItemMenu>Satélites naturais</ItemMenu>
-                <ItemMenu>Estrela</ItemMenu>
-                <ItemMenu>Anã vermelha</ItemMenu>
-                <ItemMenu>Anã branca</ItemMenu>
-                <ItemMenu>Estrela binária</ItemMenu>
-                <ItemMenu>Gigante azul</ItemMenu>
-                <ItemMenu>Gigante vermelha</ItemMenu>
+                <ItemMenu onClick={()=>changeMenu('galaxia')}>Galáxia</ItemMenu>
+                <ItemMenu onClick={()=>changeMenu('sistema')}>Sistemas planetários</ItemMenu>
+                <ItemMenu onClick={()=>changeMenu('planeta')}>Planetas</ItemMenu>
+                <ItemMenu onClick={()=>changeMenu('satelite')}>Satélites naturais</ItemMenu>
+                <ItemMenu onClick={()=>changeMenu('estrela')}>Estrela</ItemMenu>
+                <ItemMenu onClick={()=>changeMenu('anaVermelha')}>Anã vermelha</ItemMenu>
+                <ItemMenu onClick={()=>changeMenu('anaBranca')}>Anã branca</ItemMenu>
+                <ItemMenu onClick={()=>changeMenu('estrelaBinaria')}>Estrela binária</ItemMenu>
+                <ItemMenu onClick={()=>changeMenu('giganteAzul')}>Gigante azul</ItemMenu>
+                <ItemMenu onClick={()=>changeMenu('giganteVermelha')}>Gigante vermelha</ItemMenu>
               </ItensMenu>
             </Menu>
             <Lupa src={imgLupa} ></Lupa>

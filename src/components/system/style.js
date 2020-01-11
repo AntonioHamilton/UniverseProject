@@ -47,7 +47,7 @@ export const ItensMenu = styled.div `
     align-items: center;
     color: black;
 `
-export const ItemMenu = styled.div `
+export const ItemMenu = styled.a `
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -101,3 +101,36 @@ export const User = styled.img `
     background: black; 
 `
 
+export const ItemSettings = styled.a `
+    color: black;
+    padding: 10px;
+    transition: all 0.2s;
+    :hover {
+        background: black;
+        color: white;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
+
+export const WrapSettings = styled.div `
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    background: white;
+    width: 30vh;
+    transition: all 0.5s;
+    right: ${({enableSettings}) => enableSettings ? 0 : -600}px;
+    top: 0;
+`
+
+export const WrapItemSettings = styled.div `
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+`

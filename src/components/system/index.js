@@ -1,18 +1,17 @@
 import React, {useState, useEffect} from "react";
-import {Container, WrapInput ,Head, Menu, ItensMenu, ItemMenu, Lupa, Search, MenuUser, UserName, User} from './style';
+import {Container, WrapInput ,Head, Menu, ItensMenu, ItemMenu, Lupa, Search, MenuUser, UserName, User, WrapSettings, ItemSettings, WrapItemSettings} from './style';
 import { HamburgerButton } from 'react-hamburger-button'
 import imgLupa from '../../assets/icons/lupa.png'
 import imgUser from '../../assets/icons/boneco.png'
 
+const aleatorio = Math.floor(Math.random()*100 % 5);
+const frase = ['Fala tu', 'Oi', 'Olá', 'Bem-vindo', 'Eaew']
 
 const SystemPage = () =>{
 
-  
-  const [enableMenu, setEnableMenu] = useState(false)
-
-
-  
-  const [nome, setNome] = useState('Yves')
+  const [enableMenu, setEnableMenu] = useState(false);
+  const [enableSettings, setSettings] = useState(false);
+  const [nome, setNome] = useState('Yves');
 
   const changeName = () => {
     setNome('Antonio')
@@ -43,18 +42,26 @@ const SystemPage = () =>{
                 <ItemMenu>Luas</ItemMenu>
                 <ItemMenu>Estrelas</ItemMenu>
               </ItensMenu>
-
             </Menu>
             <Lupa src={imgLupa} ></Lupa>
             <Search placeholder="Buscar" ></Search>
           </WrapInput>
-
           <MenuUser>
-            <UserName>Oi, {nome}</UserName>            
-            <User src={imgUser}></User>
+            <UserName>{frase[aleatorio]}, {nome}</UserName>            
+            <User src={imgUser} onClick={() => {
+              setSettings(!enableSettings)
+            }}></User>
+            <WrapSettings enableSettings={enableSettings}>
+              <WrapItemSettings>           
+              <UserName>{frase[aleatorio]}, {nome}</UserName>  
+                <User src={imgUser} onClick={() => setSettings(!enableSettings)}></User>
+              </WrapItemSettings>
+              <ItemSettings>CONFIGURAÇÕES</ItemSettings>
+              <ItemSettings>SAIR</ItemSettings>
+              <ItemSettings>LINGUIÇA</ItemSettings>
+            </WrapSettings>
           </MenuUser>
         </Head>
-
     </Container>
   )
 }

@@ -7,11 +7,11 @@ import img from '../../assets/images/marte.png'
 
 import {Container, WrapSlider} from './style'
 
-const PlanetSlider = () => {
+const PlanetSlider2 = () => {
     return (
         <Container className="Slider">
             <WrapSlider>
-                <AwesomeSlider cssModule={AwesomeSliderStyles}>
+                <AwesomeSlider cssModule={AwesomeSliderStyles} bullets={false}>
                     <div data-src={img}/>
                     <div data-src={img}/>
                     <div data-src={img}/>
@@ -22,4 +22,4 @@ const PlanetSlider = () => {
     )
 }
 
-export default PlanetSlider;
+export default PlanetSlider2;

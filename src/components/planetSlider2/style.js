@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div `
     height: 90vh;
-    justify-content: center;
-    align-items: center;
+    justify-content:center;
     display: flex;
     background: #0f0c29;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
@@ -12,7 +11,7 @@ export const Container = styled.div `
 `
 
 export const WrapSlider = styled.div `
-    height: 50vh;
-    width: 100vh;
+    height: 90vh;
+    min-width: 100%;
     background: white;
 `

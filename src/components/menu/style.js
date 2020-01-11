@@ -84,7 +84,7 @@ export const HamburgerStyle = styled.div `
         top: 0;
         left: 6px;
         padding: 10px;
-        z-index: 40;
+        z-index: 41;
     }
 `
 

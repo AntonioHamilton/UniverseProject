@@ -13,6 +13,11 @@ const SystemPage = () =>{
   const [nome, setNome] = useState('Yves')
   const [enableSettings, setSettings] = useState(false);
 
+  const a = ['x','y','z']
+  const b = [1,2,3]
+
+
+
   const changeName = () => {
     setNome('Antonio')
   }
@@ -62,13 +67,13 @@ const SystemPage = () =>{
                 <UserName style={{padding:'0 0 0 0'}}>{nome}, {fraseSaida[aleatorio]}</UserName>
                 <User src={imgUser} style={{margin:'0 0 0 30px'}} onClick={() => setSettings(!enableSettings)}></User>
               </WrapItemSettings>
-              <ItemSettings href="/gerenciar">GERENCIAR ENTIDADES</ItemSettings>
+              <ItemSettings href="/sistema">BUSCAR ENTIDADES</ItemSettings>
               <ItemSettings>CONFIGURAÇÕES</ItemSettings>
               <ItemSettings href="/">SAIR</ItemSettings>
             </WrapSettings>
           </MenuUser>
         </Head>
-
+    
     </Container>
   )
 }

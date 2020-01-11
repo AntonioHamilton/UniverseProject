@@ -1,21 +1,17 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect} from 'react';
 import {Container, WrapInput ,Head, Menu, ItensMenu, ItemMenu, Lupa, Search, MenuUser, UserName, User, ItemSettings, WrapSettings, WrapItemSettings} from './style';
 import { HamburgerButton } from 'react-hamburger-button'
 import imgLupa from '../../assets/icons/lupa.png'
 import imgUser from '../../assets/icons/boneco.png'
 
 
-const ManagePage = () =>{
+const ManagePage = () => {
 
   const aleatorio = Math.floor(Math.random()*100 % 2);
   const fraseSaida = ['já vai?', 'tudo bem?']
   const [enableMenu, setEnableMenu] = useState(false)
   const [nome, setNome] = useState('Yves')
   const [enableSettings, setSettings] = useState(false);
-  const [lista, setLista] = useState('')
-
-  const galaxia = ['Id', 'Nome', 'Quantidade de sistemas', 'Distância da Terra']
-  const planetas = ['Id', 'Nome', 'Tamanho', 'Massa', 'Gravidade', 'Complemento']
 
   const changeName = () => {
     setNome('Antonio')
@@ -28,6 +24,7 @@ const ManagePage = () =>{
   return (
     <Container>
         <Head>
+          {}
           <WrapInput>
             <Menu enable={enableMenu}>
               <HamburgerButton style={{zIndex: 20}}
@@ -40,7 +37,6 @@ const ManagePage = () =>{
                 animationDuration={0.5}
               />
               <ItensMenu enableMenu={enableMenu}>
-             
                 <ItemMenu>Galáxia</ItemMenu>
                 <ItemMenu>Sistemas planetários</ItemMenu>
                 <ItemMenu>Planetas</ItemMenu>
@@ -72,9 +68,6 @@ const ManagePage = () =>{
             </WrapSettings>
           </MenuUser>
         </Head>
-        {}
-        
-
     </Container>
   )
 }

@@ -68,7 +68,6 @@ const SystemPage = () =>{
             </WrapSettings>
           </MenuUser>
         </Head>
-
     </Container>
   )
 }

@@ -5,7 +5,7 @@ import imgLupa from '../../assets/icons/lupa.png'
 import imgUser from '../../assets/icons/boneco.png'
 
 
-const SystemPage = () =>{
+const Manage = () =>{
 
   const aleatorio = Math.floor(Math.random()*100 % 2);
   const fraseSaida = ['já vai?', 'tudo bem?']
@@ -78,5 +78,4 @@ const SystemPage = () =>{
   )
 }
 
-
-export default SystemPage
+export default Manage;

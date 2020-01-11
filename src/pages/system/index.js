@@ -1,5 +1,5 @@
 import React from 'react';
-import Slider from '../../components/Slider/index';
+import Slider from '../../components/slider/index';
 import Header from '../../components/system/index';
 
 export default function SystemPage () {

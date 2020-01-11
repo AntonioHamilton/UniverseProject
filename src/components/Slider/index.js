@@ -4,9 +4,6 @@ import { Slide } from 'react-slideshow-image'
 import {SlideShow, SlideInfo, SlideImg, SlideTitle, SlideText} from './style'
 import img from '../../assets/images/marte.png'
 
-
-
-
 const PlanetSlider = () => {
 
     const properties = {

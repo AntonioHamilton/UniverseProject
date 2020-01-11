@@ -1,10 +1,10 @@
 import React from 'react';
-import Manage from '../../components/gerenciar/index';
+import ManagePage from '../../components/gerenciar/index';
 
 export default function Manage () {
     return (
         <div>
-            <Manage/>
+            <ManagePage/>
         </div>
     )
 }

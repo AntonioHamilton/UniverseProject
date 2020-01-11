@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from '../../../components/gerenciar/index';
+import Manage from '../../components/gerenciar/index';
 
 export default function Manage () {
     return (
         <div>
-            <Header/>
+            <Manage/>
         </div>
     )
 }

@@ -12,11 +12,10 @@ const Manage = () =>{
   const [enableMenu, setEnableMenu] = useState(false)
   const [nome, setNome] = useState('Yves')
   const [enableSettings, setSettings] = useState(false);
+  const [lista, setLista] = useState('')
 
-  const a = ['x','y','z']
-  const b = [1,2,3]
-
-
+  const galaxia = ['Id', 'Nome', 'Quantidade de sistemas', 'Distância da Terra']
+  const planetas = ['Id', 'Nome', 'Tamanho', 'Massa', 'Gravidade', 'Complemento']
 
   const changeName = () => {
     setNome('Antonio')
@@ -73,7 +72,9 @@ const Manage = () =>{
             </WrapSettings>
           </MenuUser>
         </Head>
-    
+        {}
+        
+
     </Container>
   )
 }

@@ -13,14 +13,15 @@ export const Container = styled.div `
 export const ContainerTitle = styled.h1 `
     padding: 20px 0px 0px 10px;
     font-size: 3rem;
+    margin-bottom: 30px;
 `
 
 export const ContainerPost = styled.div `
     display: grid;
     grid-template-columns: repeat(2, 70vh);
     grid-template-rows: repeat(5, auto);
-    grid-column-gap: 20px;
-    grid-row-gap: 15px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
     align-items: center;
     justify-content: center;
     width: auto;
@@ -28,7 +29,7 @@ export const ContainerPost = styled.div `
     left: 0;
     height: auto;
     color: black;
-    @media(max-width: 1200px) {
+    @media(max-width: 1250px) {
         grid-template-columns: repeat(1, 90vh);
         grid-template-rows: repeat(10, auto);
     }

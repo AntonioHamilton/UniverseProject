@@ -4,7 +4,7 @@ import Header from '../../components/system/index';
 
 export default function SystemPage () {
 
-    const [menu, setMenu] = useState('planeta')
+    const [menu, setMenu] = useState('galaxia')
 
     return (
         <div>

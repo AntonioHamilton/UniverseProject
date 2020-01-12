@@ -8,7 +8,7 @@ const FormGerenciar = ({ data, menu }) => {
         galaxia: {nome:'Galáxia', lista: ['Nome', 'Quantidade de sistemas', 'Distância da Terra'], banco:['nome', 'quantidade_sistemas', 'distancia_terra']},
         planeta: {nome:'Planeta', lista: ['Nome', 'Tamanho', 'Massa', 'Gravidade', 'Composição'], banco:['nome', 'tamanho', 'massa', 'gravidade', 'composicao']},
         estrela: {nome: 'Estrela', lista: ['Idade', 'Distância da Terra', 'Gravidade'], banco:['idade', 'distancia_terra', 'gravidade']},
-        sistema: {nome: 'Sistema Planetário', lista: ['Nome', 'Quantidade de Planetas', 'Quantidade de Estrelas', 'Idade do Sistema'], bdName:['nome', 'quantidade_planetas', 'quantidade_estrelas', 'idade']},
+        sistema: {nome: 'Sistema Planetário', lista: ['Nome', 'Quantidade de Planetas', 'Quantidade de Estrelas', 'Idade do Sistema'], banco:['nome', 'quantidade_planetas', 'quantidade_estrelas', 'idade']},
         satelite: {nome: 'Satélite Natural', lista: ['Nome', 'Tamanho', 'Composição', 'Massa'], banco:['nome', 'tamanho', 'composicao', 'massa']},
         anaVermelha: {nome: 'Anã Vermelha', lista: ['Nome', 'Tamanho', 'Massa'], banco:['nome', 'tamanho', 'massa']},
         anaBranca: {nome: 'Anã Branca', lista: ['Nome', 'Tamanho', 'Massa'], banco:['nome', 'tamanho', 'massa']},
@@ -17,7 +17,7 @@ const FormGerenciar = ({ data, menu }) => {
         giganteVermelha: {nome: 'Gigante Vermelha', lista: ['Nome', 'Tamanho', 'Massa', 'Morte'], banco:['nome', 'tamanho', 'massa', 'morte']}
     } 
 
-    const [infoUniverso, setUniverso] = useState(universo['planeta']);
+    const [infoUniverso, setUniverso] = useState(universo['galaxia']);
     const [checked, setChecked] = useState(true);
     const [form, setForm] = useState({});
 
@@ -75,7 +75,6 @@ const FormGerenciar = ({ data, menu }) => {
                         {infoUniverso.lista[index]}
                         { item === 'Morte' ? 
                         <div style={{display:'flex', alignItems: 'center'}}>
-                            <p>Morte</p>
                             <InputForm onClick={handleCheckBox} name={`${infoUniverso.banco[index]}`} type='checkbox'/>
                         </div> 
                         : <InputForm onChange={handleChange} name={`${infoUniverso.banco[index]}`} placeholder={`${item}`}/>}

@@ -4,7 +4,7 @@ import Form from '../../components/fomularioGerenciar/index';
 
 export default function Manage ({ data }) {
 
-    const [menu, setMenu] = useState('planeta');
+    const [menu, setMenu] = useState('galaxia');
 
     return (
         <div>

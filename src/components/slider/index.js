@@ -26,8 +26,6 @@ const PlanetSlider = ({menu}) => {
         height: 'auto',
     }
 
-
-
     return (
     <Container style={{marginTop: '0px'}}>
         <Slide {...properties} style={SlideCss}>

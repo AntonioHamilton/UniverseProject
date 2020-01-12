@@ -2,7 +2,6 @@ import React from 'react';
 import Lottie from 'react-lottie'
 import { HamburgerButton } from 'react-hamburger-button'
 import { HamburgerStyle, Menu, Nav, Link, Login } from './style';
-
 import animationData from '../../assets/animations/3169-world.json'
 
 export default class MenuComp extends React.Component {

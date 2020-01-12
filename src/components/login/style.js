@@ -2,13 +2,14 @@ import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div `
     align-items: center;
-    background: radial-gradient(ellipse at bottom, #540320 0%, #090A0F 100%);
+    /*background: radial-gradient(ellipse at bottom, #540320 0%, #090A0F 100%);
     overflow: hidden;
-    /*
+    
     border-bottom-style: double;
     border-bottom-color: coral;
     border-bottom-width: thin;
     */
+    background: white;
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -26,7 +27,7 @@ export const ContainerLogin = styled.div `
     border-top: solid;
     border-bottom: solid;
     border-radius: 15px;
-    border-color: #FFFFFF;
+    border-color: #000;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -49,7 +50,7 @@ export const Form = styled.form `
 `
 export const Text = styled.p `
     font-size: 36px;
-    color: white;
+    color: black;
     font-family: 'Dosis', sans-serif;
     @media (min-width: 0px) and (max-width:384px) {
         font-size: 30px;
@@ -68,7 +69,7 @@ export const Usuario = styled.input `
     height: 10%;
     width: 80%;
     font-size: 14px;
-    border: 0;
+    border: 1px solid black;
     font-family: 'Roboto', sans-serif;
 `
 
@@ -80,12 +81,13 @@ export const Senha = styled.input `
     height: 10%;
     width: 80%;
     font-size: 14px;
-    border: 0;
+    border: 1px solid black;
     font-family: 'Roboto', sans-serif;
 `
 
 export const ButtonLogin = styled.button `
     outline: none;
+    
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -115,7 +117,7 @@ export const TextButton = styled.a `
 export const NewUserText = styled.a `
     margin: 50px 0px 0px 0px;
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: 'Dosis', sans-serif;
     
 `
@@ -123,7 +125,7 @@ export const NewUserText = styled.a `
 export const NewUser = styled.a `
     margin: 50px 0px 0px 0px;
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: 'Dosis', sans-serif;
 
     :hover {
@@ -133,9 +135,9 @@ export const NewUser = styled.a `
 `
 
 const multiple_box_shadow = n => {
-    let value = `${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px  #FFF`;
+    let value = `${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px  #000`;
     for(let i = 2; i <= n; i++){
-      value = `${value}, ${Math.floor(Math.random() * 2000)}px  ${Math.floor(Math.random() * 2000)}px  #FFF`
+      value = `${value}, ${Math.floor(Math.random() * 2000)}px  ${Math.floor(Math.random() * 2000)}px  #000`
     }
     return value;
   };

@@ -7,7 +7,7 @@ export const ItemForm = styled.input `
     height: 10%;
     width: 80%;
     font-size: 14px;
-    border: 0;
+    border: 1px solid black;
     font-family: 'Roboto', sans-serif;
     border-radius: 10px;
 `

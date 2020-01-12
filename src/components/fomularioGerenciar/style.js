@@ -5,10 +5,9 @@ export const Container = styled.div `
     justify-content: center;
     align-items: center;
     display: flex;
-    background: #e53935;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #F9F9FC;
     color: black;
+    
 `
 export const FormTitle = styled.h1 `
     margin-bottom: 10px;
@@ -17,38 +16,61 @@ export const FormTitle = styled.h1 `
 export const WrapForm = styled.div `
     display: flex;
     flex-direction: column;
-    width: 50vh;
-    height: 60vh;
+    width: 100vh;
+    max-height: 70vh;
+    padding: 40px 50px 50px 70px;
+    background: #fff;
     align-items: center;
-    place-content: center;
+    
+    border-radius: .25rem;
+    border: 1px solid #E8EBEB;
+    box-shadow: -7px 7px 20px rgba(24,35,43,.1);
 `
 
 export const InputForm = styled.input `
-    margin: 5px;
-    border-radius: 200px;
+    margin: 5px 0px;
+    width: 65%;
+    border-radius: .25rem;
     outline: none;
-    border: none;
-    font-size: 20px;
+    border: 1px solid #ced4da;
+    font-size: 14px;
     padding: 10px;
+    background: #fff;
+    color: #495057;
+`
+export const InputForm2 = styled.select `
+    margin: 5px 0px;
+    width: 45%;
+    border-radius: .25rem;
+    outline: none;
+    border: 1px solid #ced4da;
+    font-size: 15px;
+    padding: 10px;
+    background: #fff;
+    color: #495057;
 `
 
 export const Button = styled.a `
-    background: #2980B9;
-    border-radius: 200px;
+    background: ${ props => props.backgroundColor };
+    border-radius: .2rem;
     width: 100px;
     padding: 5px;
-    margin: 0px 5px;
+    margin: 10px 5px 0px 5px;
+    border-color: #227dbf;
     cursor: pointer;
     display: flex;
     width: 80px;
-    justify-content: center;
+    justify-content: center; 
+    :hover{
+        background: ${ props => props.color };
+    }
     :active {
-        transform: translateY(2px)
+        transform: translateY(2px);
     }
     color: white;
 `
 
 export const WrapButtons = styled.div `
-    margin-top: 10px;
+    margin-top: 15px;
     display: flex;
 `

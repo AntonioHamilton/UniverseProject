@@ -16,6 +16,7 @@ export const Head = styled.div `
     align-items: center;
     border-bottom: 1px solid #E6EAEA;
     background: white;
+    box-shadow: 0px 5px 25px rgba(24,35,43,.1);
 `
 
 export const WrapInput = styled.div `
@@ -34,6 +35,7 @@ export const Menu = styled.div `
     width: 250px;
     height: 10vh;
     background: white;
+    
 `
 export const ItensMenu = styled.div `
     transition: all 0.5s;

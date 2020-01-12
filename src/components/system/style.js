@@ -8,7 +8,7 @@ export const Container = styled.div `
 
 `
 export const Head = styled.div `
-    
+    box-shadow: 0px 5px 25px rgba(24,35,43,.1);
     display: flex;
     height: 10vh;
     width: 100%;

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div `
+    
+    margin: 15px;
     align-items: center;
     /*overflow: hidden;*/
     /*
@@ -20,7 +22,7 @@ export const Container = styled.div `
 
 export const Title = styled.h2 `
     height: auto;
-    color: white;
+    color: #0F131B;
     width: 100%;
     text-align: center;
     padding: 0px 0px 30px 0px;
@@ -29,7 +31,7 @@ export const Title = styled.h2 `
 `
 
 export const Description = styled.p `
-    color: white;
+    color: #0F131B;
     width: 70%;
     height: auto;
     text-align: center;

@@ -87,7 +87,7 @@ export const Senha = styled.input `
 
 export const ButtonLogin = styled.button `
     outline: none;
-    
+    cursor: pointer;
     border-radius: 40px;
     display: flex;
     justify-content: center;

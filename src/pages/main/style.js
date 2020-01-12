@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div `
-    background: radial-gradient(ellipse at bottom, #790029 0%, #090A0F 100%);
+    background-color: #F9F9FC;
 `
 
 export const Background = styled.img `

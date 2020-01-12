@@ -29,6 +29,7 @@ export const ButtonRegister = styled.button `
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     margin: 50px 0px 0px 0px;   
     height: 30%;
     width: 80%;

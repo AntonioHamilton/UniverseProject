@@ -11,7 +11,7 @@ export const Menu = styled.menu `
     font-size: x-large;
     color: white;
     padding: 10px 0px;
-    background: radial-gradient(ellipse at bottom, #540320 0%, #090A0F 100%);
+    background: radial-gradient(ellipse at bottom, #227EBF 0%, #0B388F 100%);
     border-bottom-style: double;
     border-bottom-color: #ffffff;
     border-bottom-width: thin;

@@ -13,7 +13,6 @@ export default class IndexPage extends Component {
   render () {
     return (
       <Container>
-        <Background src={img}></Background>
         <Menu/>
         <Container>
           

@@ -15,7 +15,7 @@ export const Card = styled.div `
     text-align-last: center;
     background-color: transparent;
     width: 230px;
-    color: white;
+    color: #0F131B;
     @media(max-width: 460px){
         margin-bottom: 25px;
         padding: 40px 0px -10px 0px;
@@ -37,7 +37,7 @@ export const Github = styled.a `
     margin-top: 10px;
     display: grid;
     text-decoration: none;
-    color: white;
+    color: #0F131B;
     :hover {
         text-decoration: underline
     } 
@@ -46,7 +46,7 @@ export const Github = styled.a `
 export const Linkedin = styled.a `
     display: grid; 
     text-decoration: none;
-    color: white;
+    color: #0F131B;
     :hover {
         text-decoration: underline
     } 

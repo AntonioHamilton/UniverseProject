@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+/*import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Container } from './style';
 import { Slide } from 'react-slideshow-image'
@@ -26,16 +26,7 @@ const PlanetSlider = ({menu}) => {
         height: 'auto',
     }
 
-    const findByType = nome => {
-        axios.get(`https://universe-project.herokuapp.com/${nome}`)
-        .then(response => {
-            setSlides(response.data)
-        }).catch(err => console.log(err))
-    }
 
-    useEffect(() => {
-        findByType(menu)    
-    }, [menu])
 
     return (
     <Container style={{marginTop: '0px'}}>
@@ -56,4 +47,4 @@ const PlanetSlider = ({menu}) => {
 
 /*<SlideImg src={item.image}/>*/
 
-export default PlanetSlider;
+/*export default PlanetSlider;*/

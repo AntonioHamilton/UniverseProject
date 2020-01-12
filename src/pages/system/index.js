@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Slider from '../../components/slider/index';
+//import Slider from '../../components/slider/index';
 import Header from '../../components/system/index';
+import EntitieList from '../../components/entitieList/index';
 
 export default function SystemPage () {
 
@@ -9,7 +10,9 @@ export default function SystemPage () {
     return (
         <div>
             <Header changeMenu={setMenu}/>
-            <Slider menu={menu}/>
+            <EntitieList menu={menu}/>
         </div>
     )
 }
+
+//<Slider menu={menu}/>

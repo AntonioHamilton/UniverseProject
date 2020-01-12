@@ -2,9 +2,9 @@ import styled from 'styled-components';
 
 export const Container2 = styled.div `
     display: flex;
-    place-content: space-evenly;
-    padding: 40px 0px 0px 0px;
-    height: auto;
+    justify-content:center;
+    padding: 0px 0px 0px 0px;
+    height: 56vh;
     @media(max-width: 460px){
         display: grid;
     }
@@ -14,6 +14,7 @@ export const Card = styled.div `
     align-self: center;
     text-align-last: center;
     background-color: transparent;
+    height: auto;
     width: 230px;
     color: #0F131B;
     @media(max-width: 460px){
@@ -25,7 +26,6 @@ export const Card = styled.div `
 
 export const Image = styled.img `
     border-radius: 100px;
-    height: 50%;
     width: 50%;
 `
 

@@ -44,11 +44,12 @@ export default class MenuComp extends React.Component {
                             />
                         </Link>
                         <Nav id="nav">
+                            <Nav><Link href="/#Slider">Home</Link></Nav>
                             <Nav><Link href="/#App">O Aplicativo</Link></Nav>
-                            <Nav><Link href="/#About">Sobre nós</Link></Nav>
+                            <Nav><Link href="/#About">Sobre nós</Link></Nav>                            
                             <Nav><Link href="/#Contact">Contato</Link></Nav>
+                            <Login className="login" href="/login">Login</Login>
                         </Nav>
-                        <Login className="login" href="/login">Login</Login>
                 </Menu>
             </>
         )

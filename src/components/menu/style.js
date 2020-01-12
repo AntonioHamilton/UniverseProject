@@ -1,17 +1,17 @@
 import styled from 'styled-components';
 
 export const Menu = styled.menu `
-    z-index: 40;
-    position: sticky;
+    z-index: 5;
     top: 0;
+    position: sticky;
     display: flex;
     height: auto !important;
     justify-content: space-between;
     align-items: center;
     font-size: x-large;
     color: white;
-    padding: 10px 0px;
-    background: radial-gradient(ellipse at bottom, #227EBF 0%, #0B388F 100%);
+    padding: 25px 50px;
+    background: white;
     border-bottom-style: double;
     border-bottom-color: #ffffff;
     border-bottom-width: thin;
@@ -28,12 +28,13 @@ export const Menu = styled.menu `
     }
 `
 export const Login = styled.a `
-    color: white;
+    color: #0F131B;
     text-decoration: none;
-    margin-right: 15px;
+    padding: 0px 12px 0px 12px;
+    font-size: 21px;
     :hover {
      
-        text-decoration: underline;
+        text-decoration: underline white;
         cursor: Pointer;
     };
     @media (max-width: 600px) {
@@ -46,12 +47,13 @@ export const Login = styled.a `
 `
 
 export const Link = styled.a `
-    color: white;
+    color: #0F131B;
     text-decoration: none;
-    padding: 0px 10px 0px 10px;
+    font-size: 21px;
+    padding: 0px 12px 0px 12px;
     :hover {
       
-        text-decoration: underline;
+        text-decoration: underline white;
         cursor: Pointer;
     };
     @media (max-width: 600px) {

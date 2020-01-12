@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Card, Container2, Image, Name, Github, Linkedin} from './style';
-import {Container, Title} from '../container1/style';
+import {Container, Title, Description} from '../container1/style';
 import img1 from '../../../assets/images/antonio.png';
 import img2 from '../../../assets/images/yves.png';
 
@@ -21,8 +21,8 @@ export default class Content2 extends Component {
 
     render () {
         return (
-            <Container id={this.props.id}>
-                <Title>{this.props.title}</Title>
+            <Container style={{padding: '0px 0px 0px 0px' ,justifyContent: 'center', height: '100vh', flexDirection: 'column'} } id={this.props.id}>
+                <Title style={{padding: '20px 0px 0px 0px'}}>{this.props.title}</Title>
                 <Container2>    
                     {this.state.card.map((item)=>{
                         console.log(item)
@@ -36,6 +36,7 @@ export default class Content2 extends Component {
                         )}
                     )}
                 </Container2>
+                <Description>{this.props.description}</Description>
             </Container>
         )
     }

@@ -24,6 +24,9 @@ export const WrapInput = styled.div `
     align-items: center;
     width: 75%;
     height: 100%;
+    @media(max-width: 500px) {
+        justify-content: start;
+    }
 `
 
 export const Menu = styled.div `
@@ -34,6 +37,12 @@ export const Menu = styled.div `
     width: 250px;
     height: 10vh;
     background: white;
+    @media(max-width: 500px) {
+        width: 100px;
+    }
+    @media(max-width: 330px) {
+        width: 40px;
+    }
 `
 export const ItensMenu = styled.div `
     transition: all 0.5s;
@@ -70,13 +79,17 @@ export const ItemMenu = styled.a `
 
 `
 
-
 export const TextMenu = styled.h1 `
 
 `
+
 export const Lupa = styled.img `
     height: 33px;
+    @media(max-width: 500px) {
+        margin-left: 5px;
+    }
 `
+
 export const Search = styled.input `
     width: 100%;
     height: 100%;
@@ -85,6 +98,11 @@ export const Search = styled.input `
     outline: none;
     font-size: 24px;
     background: white;
+    @media(max-width: 500px) {
+        position: absolute;
+        top: ${props => props.activated ? 100 : -400}px;
+        height: 40px;
+    }
 `
 
 export const MenuUser = styled.div `
@@ -127,7 +145,6 @@ export const WrapSettings = styled.div `
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
     position: fixed;
     height: 27vh;
     background: white;
@@ -136,6 +153,10 @@ export const WrapSettings = styled.div `
     right: ${({enableSettings}) => enableSettings ? 0 : -600}px;
     top: 0;
     border: 1px solid #E6EAEA;
+    @media(max-width: 300px) {
+        right: ${({enableSettings}) => enableSettings ? -65 : -600}px;
+        justify-content: start;
+    }
 `
 
 export const WrapItemSettings = styled.div `

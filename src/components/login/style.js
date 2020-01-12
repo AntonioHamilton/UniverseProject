@@ -114,7 +114,7 @@ export const TextButton = styled.a `
     font-family: 'Dosis', sans-serif;
     
 `
-export const NewUserText = styled.a `
+export const NewUserText = styled.p `
     margin: 50px 0px 0px 0px;
     text-decoration: none;
     color: black;

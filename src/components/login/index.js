@@ -7,7 +7,6 @@ export default class Login extends React.Component {
     state = {
         login:"",
         password: "",
-        token: ""
     }
 
     handleChangeName = event => {
@@ -20,10 +19,12 @@ export default class Login extends React.Component {
 
     handleSubmit = event => {
         event.preventDefault();
-
-        axios.post('https://universe-project.herokuapp.com/Login', {login:this.state.login, password:this.state.password}).then((result)=>{
+        axios.post('https://universe-project.herokuapp.com/Login', {login:this.state.login, password:this.state.password}).then((result) => {
             const token = result.data.token;
-            this.setState({token});
+            const user = result.data.user;
+            console.log(result)
+            window.localStorage.setItem('name', user.name);
+            window.localStorage.setItem('token', token);
             window.location.href = '/sistema'
         }).catch((err)=>{
             console.log(err)
@@ -34,7 +35,7 @@ export default class Login extends React.Component {
         return (
             <ContainerLogin>
                 <Form onSubmit={this.handleSubmit}>
-                    <a style={{"text-decoration":"none"}} href="/"><Text style={{padding: "0px 0px 40px 0px"}}>UniverseProject</Text></a>
+                    <a style={{"textDecoration":"none"}} href="/"><Text style={{padding: "0px 0px 40px 0px"}}>UniverseProject</Text></a>
                     <Usuario type="text" placeholder="Username" onChange={this.handleChangeName}></Usuario>
                     <Senha type="password" placeholder="Password" onChange={this.handleChangePassword}></Senha>
                     <ButtonLogin type="submit" >

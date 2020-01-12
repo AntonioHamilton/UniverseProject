@@ -12,9 +12,10 @@ const SystemPage = ({ changeMenu }) =>{
   const [enableMenu, setEnableMenu] = useState(false)
   const [nome, setNome] = useState('Yves')
   const [enableSettings, setSettings] = useState(false);
+  const [activated, setActivated] = useState(false);
 
   const changeName = () => {
-    setNome('Antonio')
+    setNome(localStorage.getItem('name'))
   }
 
   useEffect(() => {
@@ -49,8 +50,8 @@ const SystemPage = ({ changeMenu }) =>{
                 <ItemMenu onClick={()=>changeMenu('giganteVermelha')}>Gigante vermelha</ItemMenu>
               </ItensMenu>
             </Menu>
-            <Lupa src={imgLupa} ></Lupa>
-            <Search placeholder="Buscar" ></Search>
+            <Lupa src={imgLupa} onClick={() => {setActivated(!activated); console.log(activated)}}></Lupa>
+            <Search placeholder="Buscar" activated={activated}></Search>
           </WrapInput>
 
           <MenuUser>

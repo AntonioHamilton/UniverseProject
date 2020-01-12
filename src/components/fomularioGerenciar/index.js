@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {api} from '../../config/api'
+import {api} from '../../services/api'
 import {InputForm, WrapForm, Button, Container, FormTitle, WrapButtons} from './style'
 
 const FormGerenciar = ({ data, menu }) => {
@@ -34,26 +34,31 @@ const FormGerenciar = ({ data, menu }) => {
         setForm(newForm);
     }
 
-    const handleFormAdd = e => {
+    const handleFormAdd = async e => {
         e.preventDefault();
-        api.post(`/${menu}`, form)
-        setForm({})
+        const response = await api.post(`/${menu}`, form);
+        setForm({});
+        await alert(`${response.data}`);
+        console.log(response.status);
+        await window.location.reload();
     }
 
-    const handleFormMod = e => {
+    const handleFormMod = async e => {
         e.preventDefault();
-        api.put(`/${menu}`, form);
-        setForm({})
-        alert(`seu ${infoUniverso.nome} foi criado`);
-        window.location.reload();
+        const response = await api.put(`/${menu}/${form.nome}`, form)
+        setForm({});
+        await alert(`${response.data}`);
+        console.log(response.status);
+        await window.location.reload();
     }
 
-    const handleFormDel = e => {
+    const handleFormDel = async e => {
         e.preventDefault();
-        api.delete(`/${menu}`, form);
+        const response = await api.delete(`/${menu}/${form.nome}`, form)
         setForm({})
-        alert(`seu ${infoUniverso.nome} foi criado`);
-        window.location.reload();
+        await alert(`${response.data}`);
+        console.log(response.status);
+        await window.location.reload();
     }
 
     useEffect(() => {

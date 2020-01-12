@@ -12,7 +12,7 @@ export const Container = styled.div `
 
 export const ContainerTitle = styled.h1 `
     padding: 20px 0px 0px 10px;
-    font-size: 2rem;
+    font-size: 3rem;
 `
 
 export const ContainerPost = styled.div `
@@ -58,9 +58,22 @@ export const PostImage = styled.img `
 `
 
 export const PostTitle = styled.h2 `
+    margin-bottom: 7px;
+    font-size: 2rem;
+`
+
+export const WrapInfo = styled.div `
+    display: flex;
+    flex-direction: column;
     margin-bottom: 5px;
 `
 
-export const PostInfo = styled.p `
+export const WrapAllInfo = styled.div `
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-row-gap: 10px;
+`
 
+export const PostInfo = styled.p `
+    margin-bottom: 5px;
 `

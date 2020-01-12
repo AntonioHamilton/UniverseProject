@@ -1,21 +1,21 @@
 import React, {useEffect, useState} from 'react';
 import {api} from '../../services/api';
-import {Container, WrapPost, ContainerPost, ContainerTitle, PostImage, PostInfo, PostTitle} from './style.js'
+import {Container, WrapPost, ContainerPost, ContainerTitle, PostImage, PostInfo, PostTitle, WrapAllInfo, WrapInfo} from './style.js'
 
 const EntitieList = ({menu}) => {
 
 
     const universo = {
-        galaxia: { lista: ['Nome', 'Quantidade de sistemas', 'Distância da Terra'], banco:['nome', 'quantidade_sistemas', 'distancia_terra']},
-        planeta: { lista: ['Nome', 'Tamanho', 'Massa', 'Gravidade', 'Composição'], banco:['nome', 'tamanho', 'massa', 'gravidade', 'composicao']},
-        estrela: {nome: 'Estrela', lista: ['Idade', 'Distância da Terra', 'Gravidade'], banco:['idade', 'distancia_terra', 'gravidade']},
-        sistema: {nome: 'Sistema Planetário', lista: ['Nome', 'Quantidade de Planetas', 'Quantidade de Estrelas', 'Idade do Sistema'], banco:['nome', 'quantidade_planetas', 'quantidade_estrelas', 'idade']},
-        satelite: {nome: 'Satélite Natural', lista: ['Nome', 'Tamanho', 'Composição', 'Massa'], banco:['nome', 'tamanho', 'composicao', 'massa']},
-        anaVermelha: {nome: 'Anã Vermelha', lista: ['Nome', 'Tamanho', 'Massa'], banco:['nome', 'tamanho', 'massa']},
-        anaBranca: {nome: 'Anã Branca', lista: ['Nome', 'Tamanho', 'Massa'], banco:['nome', 'tamanho', 'massa']},
-        estrelaBinaria: {nome: 'Estrela Binária', lista: ['Nome', 'Tamanho', 'Massa'], banco:['nome', 'tamanho', 'massa']},
-        giganteAzul: {nome: 'Gigante Azul', lista: ['Nome', 'Tamanho', 'Massa'], banco:['nome', 'tamanho', 'massa']},
-        giganteVermelha: {nome: 'Gigante Vermelha', lista: ['Nome', 'Tamanho', 'Massa', 'Morte'], banco:['nome', 'tamanho', 'massa', 'morte']}
+        galaxia: { lista: ['Quantidade de sistemas', 'Distância da Terra'], banco:['quantidade_sistemas', 'distancia_terra']},
+        planeta: { lista: ['Tamanho', 'Massa', 'Gravidade', 'Composição'], banco:['tamanho', 'massa', 'gravidade', 'composicao']},
+        estrela: { lista: ['Idade', 'Distância da Terra', 'Gravidade'], banco:['idade', 'distancia_terra', 'gravidade']},
+        sistema: { lista: ['Quantidade de Planetas', 'Quantidade de Estrelas', 'Idade do Sistema'], banco:['quantidade_planetas', 'quantidade_estrelas', 'idade']},
+        satelite: { lista: ['Tamanho', 'Composição', 'Massa'], banco:['tamanho', 'composicao', 'massa']},
+        anaVermelha: { lista: ['Tamanho', 'Massa'], banco:['tamanho', 'massa']},
+        anaBranca: { lista: ['Tamanho', 'Massa'], banco:['tamanho', 'massa']},
+        estrelaBinaria: {lista: ['Tamanho', 'Massa'], banco:['tamanho', 'massa']},
+        giganteAzul: { lista: ['Tamanho', 'Massa'], banco:['tamanho', 'massa']},
+        giganteVermelha: { lista: ['Tamanho', 'Massa', 'Morte'], banco:['tamanho', 'massa', 'morte']}
     } 
 
     const [posts, setPosts] = useState([])
@@ -42,9 +42,14 @@ const EntitieList = ({menu}) => {
                     <WrapPost key={index} >
                         <PostImage src={`${item.url_imagem}`} />
                         { menu === 'estrela' ? <PostTitle>{item.id}</PostTitle> : <PostTitle>{item.nome}</PostTitle>}
-                        {universe[menu].map((item, index) => (
-                            <PostInfo>item</PostInfo>
-                        ))}       
+                        <WrapAllInfo>
+                            { universo[menu].lista.map((internItem, internIndex) => (
+                                <WrapInfo key={internIndex}>
+                                    <PostInfo style={{fontWeight: 'bold', fontSize: '17px'}}>{internItem}</PostInfo>
+                                    <PostInfo>{item[universo[menu].banco[internIndex]]}</PostInfo>
+                                </WrapInfo>
+                            ))}       
+                        </WrapAllInfo>
                     </WrapPost>
                 ))     
                 }

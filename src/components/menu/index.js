@@ -3,6 +3,7 @@ import Lottie from 'react-lottie'
 import { HamburgerButton } from 'react-hamburger-button'
 import { HamburgerStyle, Menu, Nav, Link, Login } from './style';
 import animationData from '../../assets/animations/3169-world.json'
+import img from '../../assets/images/LOGO.png'
 
 export default class MenuComp extends React.Component {
     
@@ -35,12 +36,8 @@ export default class MenuComp extends React.Component {
                     />
                 </HamburgerStyle>
                 <Menu enable={this.state.enable}>
-                        <Link href="#image">
-                            <Lottie 
-                                options={defaultOptions}
-                                height={30}
-                                width={30}
-                            />
+                        <Link href="/#Slider">
+                            <img src={img} style={{height: '40px'}}></img>
                         </Link>
                         <Nav id="nav">
                             <Nav><Link href="/#Slider">Home</Link></Nav>

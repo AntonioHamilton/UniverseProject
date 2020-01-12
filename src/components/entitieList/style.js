@@ -8,11 +8,6 @@ export const Container = styled.div `
     color: #000000;
     background: #F9F9FC;
     text-align: -webkit-center;
-    @media(max-width: 850px) {
-        margin-top: 50px;
-        height: auto;
-        width: auto;
-    }
 `
 
 export const ContainerTitle = styled.h1 `
@@ -33,16 +28,14 @@ export const ContainerPost = styled.div `
     left: 0;
     height: auto;
     color: black;
-    @media(max-width: 1220px) {
+    @media(max-width: 1200px) {
         grid-template-columns: repeat(1, 90vh);
         grid-template-rows: repeat(10, auto);
     }
-    @media(max-width: 850px) {
-        margin-top: 50px;
-        height: auto;
-        width: auto;
+    @media(max-width: 800px) {
+        grid-template-columns: repeat(1, 100%);
     }
-    padding: 20px;
+    padding: 10px;
 `
 
 export const WrapPost = styled.div `
@@ -60,10 +53,12 @@ export const WrapPost = styled.div `
 export const PostImage = styled.img `
     height: 100px;
     width: 100px;
+    border-radius: .6rem;
+    margin-bottom: 5px;
 `
 
 export const PostTitle = styled.h2 `
-
+    margin-bottom: 5px;
 `
 
 export const PostInfo = styled.p `

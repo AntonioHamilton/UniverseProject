@@ -19,12 +19,14 @@ export const Title = styled.h2 `
     width: 100%;
     text-align: center;
 
+
     padding: 0px 0px 90px 0px;
     font-family: 'Dosis', sans-serif;
 
     padding: 20px 0px 30px 0px;
 
     font-size: 41px;
+
 `
 
 export const Description = styled.p `
@@ -33,12 +35,12 @@ export const Description = styled.p `
     height: auto;
     text-align: center;
 
+
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
 
-
-    margin-bottom: 20px;
 `
+
 
 export const WrapContacts = styled.div `
     display: flex;
@@ -74,5 +76,4 @@ export const WrapContacts2 = styled.div `
     color: black;
     width: 200px;
     padding: 10px 0px 0px 0px;
-
 `

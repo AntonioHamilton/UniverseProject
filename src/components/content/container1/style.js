@@ -27,6 +27,7 @@ export const Title = styled.h1 `
     padding: 20px 0px 30px 0px;
     padding: 20px 0px 40px 0px;
     font-size: 41px;
+
 `
 
 export const Description = styled.p `

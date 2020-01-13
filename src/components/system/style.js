@@ -162,6 +162,7 @@ export const WrapSettings = styled.div `
     transition: all 0.5s;
     right: ${({enableSettings}) => enableSettings ? 0 : -600}px;
 
+
     top: 10.3vh;
     transform: translateX(-5%);
     border: 1px solid #E6EAEA;

@@ -31,6 +31,7 @@ export const Image = styled.img `
 `
 
 export const Name = styled.p `
+
     margin-top: 5px;
     font-family: 'Dosis', sans-serif;
     font-weight: bold;
@@ -61,9 +62,11 @@ export const GithubImage = styled.img `
 
 export const Linkedin = styled.a `
     display: grid; 
+
     text-decoration: none;
     color: #0F131B;
     font-family: 'Dosis', sans-serif;
+
     place-content: center;
     margin: 5px 0px;
 `

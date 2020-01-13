@@ -161,14 +161,12 @@ export const WrapSettings = styled.div `
     width: 40vh;
     transition: all 0.5s;
     right: ${({enableSettings}) => enableSettings ? 0 : -600}px;
-<<<<<<< HEAD
+
     top: 10.3vh;
     transform: translateX(-5%);
     border: 1px solid #E6EAEA;
     border-radius: .50rem;
-=======
     top: 10.1vh;
->>>>>>> 85e00a4c393d4cc29c21a45d8d83a5aa1fbe766f
     box-shadow: 0 0 1rem .2rem rgba(24,35,43,.15);
     border: 1px solid #E6EAEA;
     @media(max-width: 300px) {

@@ -10,7 +10,7 @@ export const Menu = styled.menu `
     align-items: center;
     font-size: x-large;
     color: white;
-    padding: 0px 50px;
+    padding: 5px 50px;
     background: white;
     border-bottom-style: double;
     border-bottom-color: #E6EAEA;
@@ -61,13 +61,12 @@ export const Link = styled.a `
     align-items: center;
     height: 100%;
     :hover {
-<<<<<<< HEAD
+
       
         text-decoration: underline black;
-=======
-        color: ${props => props.color ? 'none' : 'white'};
-        background: ${props => props.color ? 'none' : '#237ebf'};
->>>>>>> 85e00a4c393d4cc29c21a45d8d83a5aa1fbe766f
+
+  
+     
         cursor: Pointer;
     };
     @media (max-width: 600px) {
@@ -109,6 +108,6 @@ export const HamburgerStyle = styled.div `
 `
 
 export const Image = styled.img `
-    height: 70px;
-    width: 70px;
+    height: 40px;
+    width: 40px;
 `

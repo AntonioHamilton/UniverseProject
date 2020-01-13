@@ -44,15 +44,13 @@ export const WrapForm = styled.div `
     
     padding: 40px 50px 50px 70px;
     background: #fff;
-<<<<<<< HEAD
-    
+
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     border-radius: .5rem;
-=======
     align-items: center;
     border-radius: .25rem;
->>>>>>> 85e00a4c393d4cc29c21a45d8d83a5aa1fbe766f
+
     border: 1px solid #E8EBEB;
     box-shadow: -7px 7px 20px rgba(24,35,43,.1);
     @media(max-width: 430px) {

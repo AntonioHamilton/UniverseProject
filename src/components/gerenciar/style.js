@@ -7,12 +7,10 @@ export const Container = styled.div `
     width: 100%;
     display: flex;
     background: white;
-<<<<<<< HEAD
     top: 0;
     position: sticky;
 
-=======
->>>>>>> 85e00a4c393d4cc29c21a45d8d83a5aa1fbe766f
+
 `
 export const Head = styled.div `
     box-shadow: 0px 5px 25px rgba(24,35,43,.1);

@@ -26,8 +26,8 @@ export default class Content2 extends Component {
                 padding: '0px 0px 30px 0px' ,
                 justifyContent: 'center', 
                 height: 'auto', 
-                flexDirection: 'column', 
-                background: '#45CDFF',  /* fallback for old browsers */
+                flexDirection: 'column' 
+                 /* fallback for old browsers */
                 }
             } id={this.props.id}>
                 <Title style={{padding: '20px 0px 40px 0px'}}>{this.props.title}</Title>
@@ -38,8 +38,10 @@ export default class Content2 extends Component {
                             <Card>
                                 <Image src={item[0].image} />
                                 <Name>{item[1].name}</Name>
-                                <Github target="_blank" href={item[2].github}><GithubImage src="https://cdn1.iconfinder.com/data/icons/social-media-vol-1-1/24/_github-512.png"></GithubImage></Github>
-                                <Linkedin target="_blank" href={item[3].linkedin}><LinkedinImage src="https://icons-for-free.com/iconfiles/png/512/linkedin+icon-1320168276873005114.png"/></Linkedin>
+                                <Card style={{display: 'flex', justifyContent: 'center', alignItens: 'center'}}>
+                                    <Github target="_blank" href={item[2].github}><GithubImage src="https://cdn1.iconfinder.com/data/icons/social-media-vol-1-1/24/_github-512.png"></GithubImage></Github>
+                                    <Linkedin target="_blank" href={item[3].linkedin}><LinkedinImage src="https://icons-for-free.com/iconfiles/png/512/linkedin+icon-1320168276873005114.png"/></Linkedin>
+                                </Card>
                             </Card>
                         )}
                     )}

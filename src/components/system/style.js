@@ -72,7 +72,7 @@ export const ItemMenu = styled.a `
     height: 15vh;
     background: white;
     :hover {
-        background: radial-gradient(ellipse at bottom, #790029 0%, #090A0F 100%);
+        background: #237ebf;
         color: white;
         cursor: Pointer;
     };
@@ -131,7 +131,7 @@ export const ItemSettings = styled.a `
     padding: 10px;
     transition: all 0.2s;
     :hover {
-        background: radial-gradient(ellipse at bottom, #790029 0%, #090A0F 100%);
+        background: #237ebf;
         color: white;
     }
     display: flex;

@@ -8,10 +8,32 @@ export const Container = styled.div `
     background: #F9F9FC;
     
     color: black;
-    
+    @media(max-width: 430px) { 
+        height: 100vh;
+    }
 `
 export const FormTitle = styled.h1 `
     margin-bottom: 10px;
+`
+
+export const WrapAllInput = styled.div `
+    display: flex;
+     width: 100%;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: space-between; 
+    font-size: 16px;
+    margin: 5px 0px 5px 0px;
+    @media(max-width: 350px) {
+        flex-direction: column;
+    }
+`
+
+export const WrapInput = styled.div `
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 export const WrapForm = styled.div `
@@ -22,12 +44,23 @@ export const WrapForm = styled.div `
     
     padding: 40px 50px 50px 70px;
     background: #fff;
+<<<<<<< HEAD
     
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     border-radius: .5rem;
+=======
+    align-items: center;
+    border-radius: .25rem;
+>>>>>>> 85e00a4c393d4cc29c21a45d8d83a5aa1fbe766f
     border: 1px solid #E8EBEB;
     box-shadow: -7px 7px 20px rgba(24,35,43,.1);
+    @media(max-width: 430px) {
+        padding: 10px 10px 10px 20px;
+    }
+    @media(max-width: 350px) {
+        padding: 0;
+    }
 `
 
 export const InputForm = styled.input `
@@ -78,4 +111,7 @@ export const Button = styled.a `
 export const WrapButtons = styled.div `
     margin-top: 15px;
     display: flex;
+    @media(max-width: 350px) {
+        flex-direction: column;
+    }
 `

@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div `
+    position: sticky;
+    top: 0;
     height: 100%;
     width: 100%;
     display: flex;
     top: 0;
     position: sticky;
     background: white;
-
 `
 export const Head = styled.div `
     
@@ -71,6 +72,7 @@ export const ItemMenu = styled.a `
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #E6EAEA;
     width: 200px;
     font-family: 'Dosis', sans-serif;
     height: 15vh;
@@ -106,6 +108,7 @@ export const Search = styled.input `
         position: absolute;
         top: ${props => props.activated ? 100 : -400}px;
         height: 40px;
+        padding: 0;
     }
 `
 
@@ -158,11 +161,16 @@ export const WrapSettings = styled.div `
     width: 40vh;
     transition: all 0.5s;
     right: ${({enableSettings}) => enableSettings ? 0 : -600}px;
+<<<<<<< HEAD
     top: 10.3vh;
     transform: translateX(-5%);
     border: 1px solid #E6EAEA;
     border-radius: .50rem;
+=======
+    top: 10.1vh;
+>>>>>>> 85e00a4c393d4cc29c21a45d8d83a5aa1fbe766f
     box-shadow: 0 0 1rem .2rem rgba(24,35,43,.15);
+    border: 1px solid #E6EAEA;
     @media(max-width: 300px) {
         right: ${({enableSettings}) => enableSettings ? -65 : -600}px;
         justify-content: start;

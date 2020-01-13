@@ -10,21 +10,23 @@ export const Menu = styled.menu `
     align-items: center;
     font-size: x-large;
     color: white;
-    padding: 10px 50px;
+    padding: 0px 50px;
     background: white;
     border-bottom-style: double;
     border-bottom-color: #E6EAEA;
     border-bottom-width: thin;
     @media (max-width: 600px) {
+        justify-content: space-evenly;
         border: none;
         position: fixed;
         display: flex;
-        left: ${({enable}) => enable ? 0 : -600}px;
+        left: ${({enable}) => enable ? 0 : -1000}px;
         flex-direction: column;
-        width: 100%;
+        width: 20vh;
         height: 100% !important;
         transition: 1.0s linear;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: #fff;
+        z-index: 100;
     }
 `
 export const Login = styled.a `
@@ -51,16 +53,25 @@ export const Login = styled.a `
 
 export const Link = styled.a `
     color: #0F131B;
+    display: flex;
     text-decoration: none;
     font-size: 21px;
     font-family: 'Dosis', sans-serif;
     padding: 0px 12px 0px 12px;
+    align-items: center;
+    height: 100%;
     :hover {
+<<<<<<< HEAD
       
         text-decoration: underline black;
+=======
+        color: ${props => props.color ? 'none' : 'white'};
+        background: ${props => props.color ? 'none' : '#237ebf'};
+>>>>>>> 85e00a4c393d4cc29c21a45d8d83a5aa1fbe766f
         cursor: Pointer;
     };
     @media (max-width: 600px) {
+        height: auto;
         display: flex;
         flex-direction:column;
         width: 100%;
@@ -73,12 +84,15 @@ export const Link = styled.a `
 export const Nav = styled.ul `
     display: flex;
     padding: 0px;
+    align-items: center;
+    text-align: -webkit-center;
+    height: 7vh;
     @media (max-width: 600px) {
         flex-direction:column;
         width: 100%;
         text-align: center;
         margin: 0;
-        padding: 0;
+        padding: 5px 0px;
     } 
 `
 
@@ -90,7 +104,11 @@ export const HamburgerStyle = styled.div `
         top: 0;
         left: 6px;
         padding: 10px;
-        z-index: 41;
+        z-index: 101;
     }
 `
 
+export const Image = styled.img `
+    height: 70px;
+    width: 70px;
+`

@@ -8,6 +8,9 @@ export const Container = styled.div `
     color: #000000;
     background: #F9F9FC;
     text-align: -webkit-center;
+    @media(max-width: 500px) {
+        min-height: 100vh;
+    }
 `
 
 export const ContainerTitle = styled.h1 `

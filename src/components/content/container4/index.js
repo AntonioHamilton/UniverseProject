@@ -19,13 +19,13 @@ export default class Content1 extends React.Component {
                 <Description>{this.props.description}</Description>
                 <WrapContacts>
                     Antonio H.
-                    <a><Social style={{height: '70px', width:'70px'}} src='https://i.pinimg.com/originals/58/f4/72/58f4723d8f23906bdcb058604075ad2a.png'/></a>
-                    <a href=""><Social src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png'/></a>
+                    <a target="_blank" href='https://www.facebook.com/antonio.hamilton.90226'><Social style={{height: '70px', width:'70px'}} src='https://i.pinimg.com/originals/58/f4/72/58f4723d8f23906bdcb058604075ad2a.png'/></a>
+                    <a target="_blank" href="https://www.instagram.com/antonio_hamilton2/"><Social src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png'/></a>
                 </WrapContacts>
                 <WrapContacts>
                     Yves B.
-                    <a><Social style={{height: '70px', width:'70px'}} src='https://i.pinimg.com/originals/58/f4/72/58f4723d8f23906bdcb058604075ad2a.png'/></a>
-                    <a href=""><Social src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png'/></a>
+                    <a target="_blank" href="https://www.facebook.com/yves.luis.7"><Social style={{height: '70px', width:'70px'}} src='https://i.pinimg.com/originals/58/f4/72/58f4723d8f23906bdcb058604075ad2a.png'/></a>
+                    <a target="_blank" href="https://www.instagram.com/yvesbastos/"><Social src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1024px-Instagram_logo_2016.svg.png'/></a>
                 </WrapContacts>
                 <WrapContacts2>
                     <Phone><Icon src="https://www.freepngimg.com/thumb/email_marketing/62507-icons-marketing-webmail-computer-email-icon.png"/>antoniohamilton.s.freitas@gmail.com</Phone>

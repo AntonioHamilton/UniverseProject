@@ -38,8 +38,8 @@ export default class Content2 extends Component {
                             <Card>
                                 <Image src={item[0].image} />
                                 <Name>{item[1].name}</Name>
-                                <Github href={item[2].github}><GithubImage src="https://cdn1.iconfinder.com/data/icons/social-media-vol-1-1/24/_github-512.png"></GithubImage></Github>
-                                <Linkedin href={item[3].linkedin}><LinkedinImage src="https://icons-for-free.com/iconfiles/png/512/linkedin+icon-1320168276873005114.png"/></Linkedin>
+                                <Github target="_blank" href={item[2].github}><GithubImage src="https://cdn1.iconfinder.com/data/icons/social-media-vol-1-1/24/_github-512.png"></GithubImage></Github>
+                                <Linkedin target="_blank" href={item[3].linkedin}><LinkedinImage src="https://icons-for-free.com/iconfiles/png/512/linkedin+icon-1320168276873005114.png"/></Linkedin>
                             </Card>
                         )}
                     )}

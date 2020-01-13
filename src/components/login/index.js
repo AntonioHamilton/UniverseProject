@@ -16,7 +16,7 @@ export default class Login extends React.Component {
     handleChangePassword = event => {
         this.setState({password: event.target.value, })
     }
-
+    /*
     handleSubmit = event => {
         event.preventDefault();
         api.post('/Login', {login:this.state.login, password:this.state.password}).then((result) => {
@@ -29,7 +29,7 @@ export default class Login extends React.Component {
             console.log(err)
         })
     }
-
+*/
     render () {
         return (
             <ContainerLogin>

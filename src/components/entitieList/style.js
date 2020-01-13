@@ -14,6 +14,7 @@ export const ContainerTitle = styled.h1 `
     padding: 20px 0px 0px 10px;
     font-size: 3rem;
     margin-bottom: 30px;
+    font-family: 'Dosis', sans-serif;
 `
 
 export const ContainerPost = styled.div `
@@ -24,6 +25,7 @@ export const ContainerPost = styled.div `
     grid-row-gap: 30px;
     align-items: center;
     justify-content: center;
+    font-family: 'Dosis', sans-serif;
     width: auto;
     top: 0;
     left: 0;

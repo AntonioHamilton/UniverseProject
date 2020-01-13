@@ -31,12 +31,15 @@ export const Image = styled.img `
 
 export const Name = styled.p `
     margin-top: 5px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bold;
 `
 
 export const Github = styled.a `
     margin-top: 10px;
     display: grid;
     text-decoration: none;
+    font-family: 'Dosis', sans-serif;
     color: #0F131B;
     :hover {
         text-decoration: underline
@@ -47,6 +50,7 @@ export const Linkedin = styled.a `
     display: grid; 
     text-decoration: none;
     color: #0F131B;
+    font-family: 'Dosis', sans-serif;
     :hover {
         text-decoration: underline
     } 

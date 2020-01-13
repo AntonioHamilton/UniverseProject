@@ -20,13 +20,14 @@ export const Container = styled.div `
     }
 `
 
-export const Title = styled.h2 `
+export const Title = styled.h1 `
     height: auto;
     color: #0F131B;
     width: 100%;
+    font-family: 'Dosis', sans-serif;
     text-align: center;
     padding: 20px 0px 30px 0px;
-    font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+
     font-size: 52px;
 `
 
@@ -35,6 +36,6 @@ export const Description = styled.p `
     width: 70%;
     height: auto;
     text-align: center;
-    font-family: 'Roboto Slab', 'Open Sans', sans-serif;
-    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 `

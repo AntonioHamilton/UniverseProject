@@ -19,7 +19,7 @@ export const Title = styled.h2 `
     width: 100%;
     text-align: center;
     padding: 0px 0px 90px 0px;
-    font-family: 'Roboto Slab', 'Open Sans', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-size: 52px;
 `
 
@@ -28,6 +28,6 @@ export const Description = styled.p `
     width: 70%;
     height: auto;
     text-align: center;
-    font-family: 'Roboto Slab', 'Open Sans', sans-serif;
-    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
 `

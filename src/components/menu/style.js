@@ -13,7 +13,7 @@ export const Menu = styled.menu `
     padding: 10px 50px;
     background: white;
     border-bottom-style: double;
-    border-bottom-color: #ffffff;
+    border-bottom-color: #E6EAEA;
     border-bottom-width: thin;
     @media (max-width: 600px) {
         border: none;
@@ -28,13 +28,16 @@ export const Menu = styled.menu `
     }
 `
 export const Login = styled.a `
-    color: #0F131B;
+    color: black;
     text-decoration: none;
-    padding: 0px 12px 0px 12px;
+    margin: 0px 5px 0px 30px;
     font-size: 21px;
+    font-family: 'Dosis', sans-serif;
+    text-decoration: underline black;
     :hover {
-     
-        text-decoration: underline white;
+        background: white;
+        color: black;
+        
         cursor: Pointer;
     };
     @media (max-width: 600px) {
@@ -50,10 +53,11 @@ export const Link = styled.a `
     color: #0F131B;
     text-decoration: none;
     font-size: 21px;
+    font-family: 'Dosis', sans-serif;
     padding: 0px 12px 0px 12px;
     :hover {
       
-        text-decoration: underline white;
+        text-decoration: underline black;
         cursor: Pointer;
     };
     @media (max-width: 600px) {

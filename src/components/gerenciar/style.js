@@ -5,6 +5,8 @@ export const Container = styled.div `
     width: 100%;
     display: flex;
     background: white;
+    top: 0;
+    position: sticky;
 
 `
 export const Head = styled.div `
@@ -48,6 +50,7 @@ export const ItensMenu = styled.div `
     transition: all 0.5s;
     display: flex;
     position: fixed;
+    box-shadow: 0px 5px 25px rgba(24,35,43,.1);
     left: ${({enableMenu}) => enableMenu ? 0 : -600}px;
     width: 200px;
     top: 10vh;
@@ -65,9 +68,11 @@ export const ItensMenu = styled.div `
 export const ItemMenu = styled.a `
     display:flex;
     flex-direction: column;
+    
+    font-family: 'Dosis', sans-serif;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #E6EAEA;
+    
     width: 200px;
     height: 15vh;
     background: white;
@@ -96,7 +101,7 @@ export const Search = styled.input `
     padding: 0px 15px;
     border: 0;
     outline: none;
-    font-size: 24px;
+    font-size: 21px;
     background: white;
     @media(max-width: 500px) {
         position: absolute;
@@ -115,6 +120,7 @@ export const UserName = styled.h3`
     color: black;
     font-size: 16px;
     padding: 0px 10px;
+    font-family: 'Open Sans', sans-serif;
 `
 
 export const User = styled.img `
@@ -135,6 +141,7 @@ export const ItemSettings = styled.a `
         color: white;
     }
     display: flex;
+    font-family: 'Dosis', sans-serif;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -151,7 +158,9 @@ export const WrapSettings = styled.div `
     width: 40vh;
     transition: all 0.5s;
     right: ${({enableSettings}) => enableSettings ? 0 : -600}px;
-    top: 10.1vh;
+    top: 10.3vh;
+    border-radius: .50rem;
+    transform: translateX(-5%);
     box-shadow: 0 0 1rem .2rem rgba(24,35,43,.15);
     border: 1px solid #E6EAEA;
     @media(max-width: 300px) {

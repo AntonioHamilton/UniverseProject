@@ -4,10 +4,13 @@ export const Container = styled.div `
     height: 100%;
     width: 100%;
     display: flex;
+    top: 0;
+    position: sticky;
     background: white;
 
 `
 export const Head = styled.div `
+    
     box-shadow: 0px 5px 25px rgba(24,35,43,.1);
     display: flex;
     height: 10vh;
@@ -57,6 +60,7 @@ export const ItensMenu = styled.div `
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow: 0px 5px 25px rgba(24,35,43,.1);
     color: black;
     z-index: 50;
     background: white;
@@ -68,6 +72,7 @@ export const ItemMenu = styled.a `
     justify-content: center;
     align-items: center;
     width: 200px;
+    font-family: 'Dosis', sans-serif;
     height: 15vh;
     background: white;
     :hover {
@@ -95,7 +100,7 @@ export const Search = styled.input `
     padding: 0px 15px;
     border: 0;
     outline: none;
-    font-size: 24px;
+    font-size: 21px;
     background: white;
     @media(max-width: 500px) {
         position: absolute;
@@ -108,12 +113,14 @@ export const MenuUser = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
+    
 `
 
 export const UserName = styled.h3`
     color: black;
     font-size: 16px;
     padding: 0px 10px;
+    font-family: 'Open Sans', sans-serif;
 `
 
 export const User = styled.img `
@@ -136,6 +143,7 @@ export const ItemSettings = styled.a `
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Dosis', sans-serif;
     text-decoration: none;
 `
 
@@ -150,9 +158,10 @@ export const WrapSettings = styled.div `
     width: 40vh;
     transition: all 0.5s;
     right: ${({enableSettings}) => enableSettings ? 0 : -600}px;
-    top: 10.1vh;
+    top: 10.3vh;
+    transform: translateX(-5%);
     border: 1px solid #E6EAEA;
-    border-radius: .25rem;
+    border-radius: .50rem;
     box-shadow: 0 0 1rem .2rem rgba(24,35,43,.15);
     @media(max-width: 300px) {
         right: ${({enableSettings}) => enableSettings ? -65 : -600}px;

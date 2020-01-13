@@ -131,7 +131,7 @@ export const ItemSettings = styled.a `
     padding: 10px;
     transition: all 0.2s;
     :hover {
-        background: #237ebf;
+        background: ${ props => props.color };
         color: white;
     }
     display: flex;
@@ -151,7 +151,8 @@ export const WrapSettings = styled.div `
     width: 40vh;
     transition: all 0.5s;
     right: ${({enableSettings}) => enableSettings ? 0 : -600}px;
-    top: 0;
+    top: 10.1vh;
+    box-shadow: 0 0 1rem .2rem rgba(24,35,43,.15);
     border: 1px solid #E6EAEA;
     @media(max-width: 300px) {
         right: ${({enableSettings}) => enableSettings ? -65 : -600}px;

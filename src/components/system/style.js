@@ -67,7 +67,6 @@ export const ItemMenu = styled.a `
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #E6EAEA;
     width: 200px;
     height: 15vh;
     background: white;
@@ -131,7 +130,7 @@ export const ItemSettings = styled.a `
     padding: 10px;
     transition: all 0.2s;
     :hover {
-        background: #237ebf;
+        background: ${ props => props.color };
         color: white;
     }
     display: flex;
@@ -151,8 +150,10 @@ export const WrapSettings = styled.div `
     width: 40vh;
     transition: all 0.5s;
     right: ${({enableSettings}) => enableSettings ? 0 : -600}px;
-    top: 0;
+    top: 10.1vh;
     border: 1px solid #E6EAEA;
+    border-radius: .25rem;
+    box-shadow: 0 0 1rem .2rem rgba(24,35,43,.15);
     @media(max-width: 300px) {
         right: ${({enableSettings}) => enableSettings ? -65 : -600}px;
         justify-content: start;

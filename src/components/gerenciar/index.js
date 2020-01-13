@@ -62,9 +62,9 @@ const ManagePage = ({ data, changeMenu}) => {
                 <UserName style={{padding:'0 0 0 0'}}>{nome}, {fraseSaida[aleatorio]}</UserName>
                 <User src={imgUser} style={{margin:'0 0 0 30px'}} onClick={() => setSettings(!enableSettings)}></User>
               </WrapItemSettings>
-              <ItemSettings href="/sistema">BUSCAR ENTIDADES</ItemSettings>
-              <ItemSettings>CONFIGURAÇÕES</ItemSettings>
-              <ItemSettings href="/">SAIR</ItemSettings>
+              <ItemSettings color='#237ebf' href="/sistema">BUSCAR ENTIDADES</ItemSettings>
+              <ItemSettings color='#237ebf'>CONFIGURAÇÕES</ItemSettings>
+              <ItemSettings color='#E12E1C' href="/">SAIR</ItemSettings>
             </WrapSettings>
           </MenuUser>
         </Head>

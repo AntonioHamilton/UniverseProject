@@ -7,9 +7,9 @@ export const Container = styled.div `
     display: flex;
     background: #F9F9FC;
     color: black;
-    /* @media(max-width: 430px) { 
+    @media(max-width: 430px) { 
         height: 100vh;
-    }*/
+    }
 `
 export const FormTitle = styled.h1 `
     margin-bottom: 10px;

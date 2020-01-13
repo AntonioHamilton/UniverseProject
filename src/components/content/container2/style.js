@@ -4,7 +4,7 @@ export const Container2 = styled.div `
     display: flex;
     justify-content:center;
     padding: 0px 0px 0px 0px;
-    height: 56vh;
+    height: auto;
     @media(max-width: 460px){
         display: grid;
     }
@@ -17,9 +17,9 @@ export const Card = styled.div `
     height: auto;
     width: 230px;
     color: #0F131B;
+    margin-bottom: 30px;
     @media(max-width: 460px){
-        margin-bottom: 25px;
-        padding: 40px 0px -10px 0px;
+        padding: 0px 0px 0px 0px;
     }
     
 `
@@ -30,24 +30,37 @@ export const Image = styled.img `
 `
 
 export const Name = styled.p `
-    margin-top: 5px;
+    margin: 5px 0px;
+    font-weight: bolder;
 `
 
 export const Github = styled.a `
-    margin-top: 10px;
-    display: grid;
-    text-decoration: none;
-    color: #0F131B;
+    display: grid; 
+    place-content: center;
+    margin: 5px 0px;
+`
+
+export const GithubImage = styled.img `
+    height: 50px;
+    width: 50px;
     :hover {
-        text-decoration: underline
-    } 
+        background: white;
+        border-radius: .7rem;
+    }
+ 
 `
 
 export const Linkedin = styled.a `
     display: grid; 
-    text-decoration: none;
-    color: #0F131B;
+    place-content: center;
+    margin: 5px 0px;
+`
+
+export const LinkedinImage = styled.img `
+    height: 50px;
+    width: 50px;
     :hover {
-        text-decoration: underline
-    } 
+        background: white;
+        border-radius: .7rem;
+    }
 `

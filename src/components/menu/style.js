@@ -61,13 +61,8 @@ export const Link = styled.a `
     align-items: center;
     height: 100%;
     :hover {
-<<<<<<< HEAD
-      
-        text-decoration: underline black;
-=======
         color: ${props => props.color ? 'none' : 'white'};
         background: ${props => props.color ? 'none' : '#237ebf'};
->>>>>>> 85e00a4c393d4cc29c21a45d8d83a5aa1fbe766f
         cursor: Pointer;
     };
     @media (max-width: 600px) {

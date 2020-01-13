@@ -1,6 +1,6 @@
 import React from 'react';
 import {ContainerLogin, Text, Form ,Usuario, Senha, ButtonLogin, TextButton, NewUser, NewUserText} from './style';
-import axios from 'axios';
+import {api} from '../../services/api';
 
 export default class Login extends React.Component {
 

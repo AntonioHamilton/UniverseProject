@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {api} from '../../services/api'
-import {InputForm, InputForm2, WrapForm, Button, Container, FormTitle, WrapButtons} from './style'
+import {InputForm, InputForm2, WrapForm, Button, Container, FormTitle, WrapButtons, WrapInput, WrapAllInput} from './style'
 
 const FormGerenciar = ({ data, menu }) => {
 
@@ -75,18 +75,17 @@ const FormGerenciar = ({ data, menu }) => {
             <WrapForm>
                 <FormTitle style={{padding: '0px 0px 8px 0px'}}>{infoUniverso.nome}</FormTitle>
                 {infoUniverso.lista.map((item, index) => (
-                    <div key={index} style={{display: 'flex', width: '100%' ,flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', fontSize: '16px',
-                    margin: '5px 0px 5px 0px'}}>
+                    <WrapAllInput key={index}>
                         {infoUniverso.lista[index]}
                         { item === 'Morte' ? 
-                        <div style={{width: '100%',display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <WrapInput>
                             <InputForm2 onChange={handleCheckBox} name={`${infoUniverso.banco[index]}`}>
                                 <option value="não">Não</option>
                                 <option value="sim">Sim</option>  
                             </InputForm2>
-                        </div> 
+                        </WrapInput> 
                         : <InputForm onChange={handleChange} name={`${infoUniverso.banco[index]}`} placeholder={`${item}`}/>}
-                    </div>
+                    </WrapAllInput>
                 ))}
                 <WrapButtons>
                     <Button color='#0c8940' backgroundColor='#2ecc71' onClick={handleFormAdd}>Adicionar</Button>

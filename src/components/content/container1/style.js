@@ -10,7 +10,7 @@ export const Container = styled.div `
     */
     display: flex;
     flex-direction: column;
-    padding: 60px 0px 30px 0px;
+    padding: 60px 0px 20px 0px;
     justify-content: space-around;
     height: auto;
     @media (max-width: 450px) {

@@ -5,7 +5,7 @@ export const Container = styled.div `
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 0px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
     height: auto;
     min-height: 50vh;
     @media (max-width: 450px) {
@@ -35,7 +35,7 @@ export const Description = styled.p `
     height: auto;
     text-align: center;
 
-
+    padding: 0px 0px 20px 0px;
     font-family: 'Open Sans', sans-serif;
     font-size: 19px;
 

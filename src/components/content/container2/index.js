@@ -23,7 +23,7 @@ export default class Content2 extends Component {
         return (
             <Container 
             style={{
-                padding: '0px 0px 30px 0px' ,
+                
                 justifyContent: 'center', 
                 height: 'auto', 
                 flexDirection: 'column' 

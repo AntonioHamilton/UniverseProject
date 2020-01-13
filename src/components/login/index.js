@@ -19,10 +19,9 @@ export default class Login extends React.Component {
 
     handleSubmit = event => {
         event.preventDefault();
-        axios.post('https://universe-project.herokuapp.com/Login', {login:this.state.login, password:this.state.password}).then((result) => {
+        api.post('/Login', {login:this.state.login, password:this.state.password}).then((result) => {
             const token = result.data.token;
             const user = result.data.user;
-            console.log(result)
             window.localStorage.setItem('name', user.name);
             window.localStorage.setItem('token', token);
             window.location.href = '/sistema'

@@ -61,14 +61,7 @@ export const Link = styled.a `
     align-items: center;
     height: 100%;
     :hover {
-
-
-      
         text-decoration: underline black;
-
-  
-     
-
         cursor: Pointer;
     };
     @media (max-width: 600px) {
@@ -89,6 +82,7 @@ export const Nav = styled.ul `
     text-align: -webkit-center;
     height: 7vh;
     @media (max-width: 600px) {
+        height: auto;
         flex-direction:column;
         width: 100%;
         text-align: center;

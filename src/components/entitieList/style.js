@@ -7,7 +7,8 @@ export const Container = styled.div `
     min-height: 89.9vh;
     color: #000000;
     background: #F9F9FC;
-    text-align: -webkit-center;
+    text-align: center;
+    
     @media(max-width: 500px) {
         min-height: 100vh;
     }
@@ -61,6 +62,7 @@ export const PostImage = styled.img `
     width: 100px;
     border-radius: .6rem;
     margin-bottom: 5px;
+    align-self: center;
 `
 
 export const PostTitle = styled.h2 `
@@ -82,4 +84,9 @@ export const WrapAllInfo = styled.div `
 
 export const PostInfo = styled.p `
     margin-bottom: 5px;
+`
+
+export const AnimationWrap = styled.div `
+    display: ${props => props.display === true ? 'flex' : 'none'};
+    justify-content: center;
 `

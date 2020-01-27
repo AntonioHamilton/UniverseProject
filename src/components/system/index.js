@@ -5,7 +5,7 @@ import imgLupa from '../../assets/icons/lupa.png'
 import imgUser from '../../assets/icons/boneco.png'
 
 
-const SystemPage = ({ changeMenu }) =>{
+const SystemPage = ({ changeMenu, changeSearch }) =>{
 
   const aleatorio = Math.floor(Math.random()*100 % 2);
   const fraseSaida = ['já vai?', 'tudo bem?']
@@ -16,6 +16,10 @@ const SystemPage = ({ changeMenu }) =>{
 
   const changeName = () => {
     setNome(localStorage.getItem('name'))
+  }
+
+  const HandleSearch = (e) => {
+    changeSearch(e.target.value)
   }
 
   useEffect(() => {
@@ -51,7 +55,7 @@ const SystemPage = ({ changeMenu }) =>{
               </ItensMenu>
             </Menu>
             <Lupa src={imgLupa} onClick={() => {setActivated(!activated); console.log(activated)}}></Lupa>
-            <Search placeholder="Buscar" activated={activated}></Search>
+            <Search placeholder="Buscar" activated={activated} onChange={HandleSearch}></Search>
           </WrapInput>
 
           <MenuUser>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Component } from "react";
-import ContainerLogin from '../../components/login/index';
-import {Container, Stars, Stars2, Stars3} from '../../components/login/style'
+import ContainerLogin from '../../login/index';
+import {Container, Stars, Stars2, Stars3} from '../../login/style'
 
 export default class IndexPage extends Component {
   render () {

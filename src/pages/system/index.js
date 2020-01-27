@@ -6,11 +6,11 @@ import EntitieList from '../../components/entitieList/index';
 export default function SystemPage () {
 
     const [menu, setMenu] = useState('galaxia')
-
+    const [search, setSearch] = useState('')
     return (
         <div>
-            <Header changeMenu={setMenu}/>
-            <EntitieList menu={menu}/>
+            <Header changeMenu={setMenu} changeSearch={setSearch}/>
+            <EntitieList menu={menu} search={search}/>
         </div>
     )
 }

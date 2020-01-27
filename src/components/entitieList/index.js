@@ -1,9 +1,29 @@
 import React, {useEffect, useState} from 'react';
 import {api} from '../../services/api';
-import {Container, WrapPost, ContainerPost, ContainerTitle, PostImage, PostInfo, PostTitle, WrapAllInfo, WrapInfo} from './style.js'
+import Lottie from 'react-lottie';
+import {Container, WrapPost, ContainerPost, ContainerTitle, PostImage, PostInfo, PostTitle, WrapAllInfo, WrapInfo, AnimationWrap} from './style.js'
+import Pig from '../../assets/animations/pork-dance.json'
+import Dog from '../../assets/animations/dancing-dog.json'
 
-const EntitieList = ({menu}) => {
+const EntitieList = ({menu, search}) => {
 
+    const pig = {
+        loop: true,
+        autoplay: true, 
+        animationData: Pig,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+    };
+
+    const dog = {
+        loop: true,
+        autoplay: true, 
+        animationData: Dog,
+        rendererSettings: {
+          preserveAspectRatio: 'xMidYMid slice'
+        }
+    };
 
     const universo = {
         galaxia: { lista: ['Quantidade de sistemas', 'Distância da Terra'], banco:['quantidade_sistemas', 'distancia_terra']},
@@ -19,6 +39,9 @@ const EntitieList = ({menu}) => {
     } 
 
     const [posts, setPosts] = useState([])
+    const [activateAnimation, setActivateAnimation] = useState(false)
+    
+
 
     const Titles = {galaxia: 'Galáxias', sistema: 'Sistemas Planetários', planeta: 'Planetas', satelite: 'Satélites Naturais', estrela: 'Estrelas', anaVermelha: 'Anãs Vermelhas', anaBranca: 'Anãs Brancas', estrelaBinaria: 'Estrelas Binárias', giganteAzul: 'Gigantes Azuis', giganteVermelha: 'Gigantes Vermelhas'}
 
@@ -30,9 +53,19 @@ const EntitieList = ({menu}) => {
         }).catch(err => console.log(err))
     }
 
+    const activatedAnim = () => {
+        if (search === 'André Lindo'){
+            setActivateAnimation(true)
+        }
+        else {
+            setActivateAnimation(false)
+        }
+    }
+
     useEffect(() => {
-        findByType(menu)    
-    }, [menu])
+        findByType(menu);
+        activatedAnim();
+    }, [menu, search])
 
     return (
         <Container>
@@ -54,6 +87,17 @@ const EntitieList = ({menu}) => {
                 ))     
                 }
             </ContainerPost>
+                <AnimationWrap display={activateAnimation}>
+                    <marquee direction="right" style={{width: '30%', minWidth: '300px'}}>
+                    <Lottie
+                        options={pig}
+                        height={300}
+                        width={300}
+                        isStopped={false}
+                        isPaused={false}
+                    />
+                    </marquee>
+                </AnimationWrap>
         </Container>
     )
 }

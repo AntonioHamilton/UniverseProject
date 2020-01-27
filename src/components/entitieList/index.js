@@ -54,7 +54,7 @@ const EntitieList = ({menu, search}) => {
     }
 
     const activatedAnim = () => {
-        if (search === 'André Lindo'){
+        if (search === 'banco de dados é top' || search === 'dcomp fantástico' || search === 'jornal nacional' || search === 'willian boner 2012' || search === 'SofTeam' || search === 'softeam'){
             setActivateAnimation(true)
         }
         else {
@@ -71,7 +71,7 @@ const EntitieList = ({menu, search}) => {
         <Container>
             <ContainerTitle>{Titles[menu]}</ContainerTitle>
             <AnimationWrap display={activateAnimation}>
-                <marquee direction="right" style={{width: '30%', minWidth: '300px'}}>
+                <marquee direction="right" style={{width: '30%', minWidth: '300px'}} scrollamount='12'>
                     <Lottie
                         options={pig}
                         height={300}

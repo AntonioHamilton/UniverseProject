@@ -70,6 +70,17 @@ const EntitieList = ({menu, search}) => {
     return (
         <Container>
             <ContainerTitle>{Titles[menu]}</ContainerTitle>
+            <AnimationWrap display={activateAnimation}>
+                <marquee direction="right" style={{width: '30%', minWidth: '300px'}}>
+                    <Lottie
+                        options={pig}
+                        height={300}
+                        width={300}
+                        isStopped={false}
+                        isPaused={false}
+                    />
+                </marquee>
+            </AnimationWrap>
             <ContainerPost>
                 {posts.map((item, index, array) => (
                     <WrapPost key={index} >
@@ -87,17 +98,6 @@ const EntitieList = ({menu, search}) => {
                 ))     
                 }
             </ContainerPost>
-                <AnimationWrap display={activateAnimation}>
-                    <marquee direction="right" style={{width: '30%', minWidth: '300px'}}>
-                    <Lottie
-                        options={pig}
-                        height={300}
-                        width={300}
-                        isStopped={false}
-                        isPaused={false}
-                    />
-                    </marquee>
-                </AnimationWrap>
         </Container>
     )
 }

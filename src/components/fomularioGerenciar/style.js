@@ -9,7 +9,8 @@ export const Container = styled.div `
     
     color: black;
     @media(max-width: 430px) { 
-        height: 100vh;
+        min-height: 100vh;
+        height: auto;
     }
 `
 export const FormTitle = styled.h1 `
@@ -19,7 +20,7 @@ export const FormTitle = styled.h1 `
 
 export const WrapAllInput = styled.div `
     display: flex;
-     width: 100%;
+    width: 100%;
     flex-direction: row; 
     align-items: center; 
     justify-content: space-between; 
@@ -54,6 +55,10 @@ export const WrapForm = styled.div `
     
     border: 1px solid #E8EBEB;
     box-shadow: -7px 7px 20px rgba(24,35,43,.1);
+    @media(max-width: 700px) {
+        max-height: 100%;
+        height: auto;
+    }
     @media(max-width: 430px) {
         padding: 10px 10px 10px 20px;
     }

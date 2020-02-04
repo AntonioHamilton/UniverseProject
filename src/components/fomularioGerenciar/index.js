@@ -44,7 +44,6 @@ const FormGerenciar = ({ data, menu }) => {
         const response = await api.post(`/${menu}`, form);
         setForm({});
         await alert(`${response.data}`);
-        console.log(response.status);
         await window.location.reload();
     }
 
@@ -53,7 +52,6 @@ const FormGerenciar = ({ data, menu }) => {
         const response = await api.put(`/${menu}/${form.nome}`, form)
         setForm({});
         await alert(`${response.data}`);
-        console.log(response.status);
         await window.location.reload();
     }
 
@@ -62,12 +60,15 @@ const FormGerenciar = ({ data, menu }) => {
         const response = await api.delete(`/${menu}/${form.nome}`, form)
         setForm({})
         await alert(`${response.data}`);
-        console.log(response.status);
         await window.location.reload();
     }
 
-    useEffect(() => {
+    let changeUniverse = (menu) => {
         setUniverso(universo[menu])
+    }
+
+    useEffect(() => {
+        changeUniverse(menu)
     }, [menu])
 
     return (

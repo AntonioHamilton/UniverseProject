@@ -1,6 +1,7 @@
 import React from 'react';
 import {ContainerLogin, Text, Form ,Usuario, Senha, ButtonLogin, TextButton, NewUser, NewUserText} from './style';
 import {api} from '../../services/api';
+import {login} from '../../services/auth';
 
 export default class Login extends React.Component {
 
@@ -23,7 +24,7 @@ export default class Login extends React.Component {
             const token = result.data.token;
             const user = result.data.user;
             window.localStorage.setItem('name', user.name);
-            window.localStorage.setItem('token', token);
+            login(token)
             window.location.href = '/sistema'
         }).catch((err)=>{
             console.log(err)

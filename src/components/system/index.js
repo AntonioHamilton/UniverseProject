@@ -3,7 +3,7 @@ import {Container, WrapInput ,Head, Menu, ItensMenu, ItemMenu, Lupa, Search, Men
 import { HamburgerButton } from 'react-hamburger-button'
 import imgLupa from '../../assets/icons/lupa.png'
 import imgUser from '../../assets/icons/boneco.png'
-
+import {logout} from '../../services/auth'
 
 const SystemPage = ({ changeMenu, changeSearch }) =>{
 
@@ -60,7 +60,7 @@ const SystemPage = ({ changeMenu, changeSearch }) =>{
 
           <MenuUser>
             <UserName>Oi, {nome}</UserName>            
-            <User src={imgUser} src={imgUser} onClick={() => {
+            <User src={imgUser} onClick={() => {
               setSettings(!enableSettings)}}  ></User>
             <WrapSettings enableSettings={enableSettings}>
               <WrapItemSettings>
@@ -69,7 +69,7 @@ const SystemPage = ({ changeMenu, changeSearch }) =>{
               </WrapItemSettings>
                 <ItemSettings color='#237ebf' href="/gerenciar">GERENCIAR ENTIDADES</ItemSettings>
                 <ItemSettings color='#237ebf'>CONFIGURAÇÕES</ItemSettings>
-                <ItemSettings color='#E12E1C' href="/">SAIR</ItemSettings>
+                <ItemSettings color='#E12E1C' href="/" onClick={() => {logout()}}>SAIR</ItemSettings>
             </WrapSettings>
           </MenuUser>
         </Head>

@@ -1,8 +1,6 @@
 import React from 'react';
-import Lottie from 'react-lottie'
 import { HamburgerButton } from 'react-hamburger-button'
 import { HamburgerStyle, Menu, Nav, Link, Login, Image } from './style';
-import animationData from '../../assets/animations/3169-world.json'
 import img from '../../assets/images/LOGO.png'
 
 export default class MenuComp extends React.Component {
@@ -12,15 +10,6 @@ export default class MenuComp extends React.Component {
     }
 
     render () {
-
-        const defaultOptions = {
-            loop: true,
-            autoplay: true, 
-            animationData: animationData,
-            rendererSettings: {
-              preserveAspectRatio: 'xMidYMid slice'
-            }
-        };
     
         return (
             <>

@@ -32,10 +32,9 @@ export default class Content2 extends Component {
             } id={this.props.id}>
                 <Title style={{padding: '20px 0px 40px 0px'}}>{this.props.title}</Title>
                 <Container2>    
-                    {this.state.card.map((item)=>{
-                        console.log(item)
+                    {this.state.card.map((item, index)=>{
                         return (
-                            <Card>
+                            <Card key={index}>
                                 <Image src={item[0].image} />
                                 <Name>{item[1].name}</Name>
                                 <Card style={{display: 'flex', justifyContent: 'center', alignItens: 'center'}}>

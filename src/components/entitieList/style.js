@@ -90,3 +90,7 @@ export const AnimationWrap = styled.div `
     display: ${props => props.display === true ? 'flex' : 'none'};
     justify-content: center;
 `
+
+export const WrapAnimation = styled.marquee `
+
+`

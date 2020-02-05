@@ -1,7 +1,7 @@
 import React from 'react';
 import {ContainerLogin, Text, Form ,Usuario, Senha, ButtonLogin, TextButton, NewUser, NewUserText} from './style';
 import {api} from '../../services/api';
-import {login} from '../../services/auth';
+import {login, logout} from '../../services/auth';
 
 export default class Login extends React.Component {
 
@@ -21,6 +21,7 @@ export default class Login extends React.Component {
     handleSubmit = event => {
         event.preventDefault();
         api.post('/Login', {login:this.state.login, password:this.state.password}).then((result) => {
+            logout();
             const token = result.data.token;
             const user = result.data.user;
             window.localStorage.setItem('name', user.name);

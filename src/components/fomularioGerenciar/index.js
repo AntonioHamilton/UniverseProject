@@ -17,7 +17,7 @@ const FormGerenciar = ({ data, menu }) => {
     galaxia: {
       nome: "Galáxia",
       lista: [
-        "Nome",
+        "Nome *",
         "Quantidade de sistemas",
         "Distância da Terra",
         "Url da imagem"
@@ -27,13 +27,13 @@ const FormGerenciar = ({ data, menu }) => {
     planeta: {
       nome: "Planeta",
       lista: [
-        "Nome",
+        "Nome *",
         "Tamanho",
         "Massa",
         "Gravidade",
         "Composição",
         "Url da imagem",
-        "Sistema o qual pertence",
+        "Sistema o qual pertence *",
         "Estrela o qual orbita: (separado por ;)"
       ],
       banco: [
@@ -51,15 +51,15 @@ const FormGerenciar = ({ data, menu }) => {
       nome: "Estrela",
       lista: [
         "Url da imagem",
-        "ID",
+        "Nome *",
         "Idade",
         "Distância da Terra",
-        "Sistema o qual pertence",
+        "Sistema o qual pertence *",
         "Tipo"
       ],
       banco: [
         "url_imagem",
-        "id",
+        "nome",
         "idade",
         "distancia_terra",
         "sistema",
@@ -70,12 +70,12 @@ const FormGerenciar = ({ data, menu }) => {
     sistema: {
       nome: "Sistema Planetário",
       lista: [
-        "Nome",
+        "Nome *",
         "Quantidade de Planetas",
         "Quantidade de Estrelas",
         "Idade do Sistema",
         "Url da imagem",
-        "Galaxia o qual pertence"
+        "Galaxia o qual pertence *"
       ],
       banco: [
         "nome",
@@ -89,7 +89,7 @@ const FormGerenciar = ({ data, menu }) => {
     satelite: {
       nome: "Satélite Natural",
       lista: [
-        "Nome",
+        "Nome *",
         "Tamanho",
         "Composição",
         "Massa",
@@ -109,7 +109,7 @@ const FormGerenciar = ({ data, menu }) => {
     },
     giganteVermelha: {
       nome: "Gigante Vermelha",
-      lista: ["Nome", "Tamanho", "Massa", "Url da imagem", "Morte"],
+      lista: ["Nome *", "Tamanho", "Massa", "Url da imagem", "Morte"],
       banco: ["nome", "tamanho", "massa", "url_imagem", "morte"]
     }
   };

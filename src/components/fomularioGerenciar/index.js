@@ -34,7 +34,7 @@ const FormGerenciar = ({ data, menu }) => {
         "Composição",
         "Url da imagem",
         "Sistema o qual pertence *",
-        "Estrela o qual orbita: (separado por ;)"
+        "Estrela o qual orbita: separe por vírgula *"
       ],
       banco: [
         "nome",
@@ -126,7 +126,7 @@ const FormGerenciar = ({ data, menu }) => {
 
   const handleNewChange = e => {
     let valor = e.target.value;
-    valor = valor.split(";");
+    valor = valor.split(",");
     const newForm = form;
     newForm[e.target.name] = valor;
     setForm(newForm);

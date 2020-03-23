@@ -116,7 +116,8 @@ const EntitieList = ({ menu, search }) => {
     anaBranca: "Anãs Brancas",
     estrelaBinaria: "Estrelas Binárias",
     giganteAzul: "Gigantes Azuis",
-    giganteVermelha: "Gigantes Vermelhas"
+    giganteVermelha: "Gigantes Vermelhas",
+    buracoNegro: "Buraco Negro"
   };
 
   const findByType = nome => {
